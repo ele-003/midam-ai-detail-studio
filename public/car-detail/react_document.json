@@ -1,0 +1,869 @@
+{
+  "schemaVersion": "2.0",
+  "canvasWidth": 774,
+  "root": [
+    {
+      "id": "car-hero",
+      "type": "element",
+      "tag": "section",
+      "props": {
+        "layout": {
+          "display": "stack",
+          "gap": 24,
+          "align": "stretch"
+        },
+        "style": {
+          "backgroundColor": "#121b29",
+          "color": "#ffffff",
+          "padding": {
+            "top": 40,
+            "right": 40,
+            "bottom": 40,
+            "left": 40
+          },
+          "fontFamily": "sans"
+        }
+      },
+      "children": [
+        {
+          "id": "car-node-2",
+          "type": "element",
+          "tag": "p",
+          "props": {
+            "style": {
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "fontSize": 12,
+              "fontWeight": 600,
+              "letterSpacing": 2,
+              "color": "#c8d9dc"
+            }
+          },
+          "children": [
+            {
+              "id": "car-text-1",
+              "type": "text",
+              "value": "EXTERIOR COLLECTION"
+            }
+          ]
+        },
+        {
+          "id": "car-node-4",
+          "type": "element",
+          "tag": "h2",
+          "props": {
+            "style": {
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "fontSize": 44,
+              "fontWeight": 700,
+              "lineHeight": 1.2
+            }
+          },
+          "children": [
+            {
+              "id": "car-text-3",
+              "type": "text",
+              "value": "블랙 SUV\n선명한 존재감"
+            }
+          ]
+        },
+        {
+          "id": "car-node-6",
+          "type": "element",
+          "tag": "p",
+          "props": {
+            "style": {
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "fontSize": 16,
+              "lineHeight": 1.7
+            }
+          },
+          "children": [
+            {
+              "id": "car-text-5",
+              "type": "text",
+              "value": "블랙 컬러와 또렷한 전면 디자인. 한 장의 사진으로 살펴보는 SUV의 외관."
+            }
+          ]
+        },
+        {
+          "id": "car-node-8",
+          "type": "element",
+          "tag": "figure",
+          "props": {
+            "style": {
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "car-image-7",
+              "type": "element",
+              "tag": "img",
+              "props": {
+                "imageId": "hero",
+                "alt": "밝은 배경에서 앞쪽과 측면이 보이는 검은색 SUV",
+                "style": {
+                  "objectFit": "contain",
+                  "borderRadius": 12
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "car-statement",
+      "type": "element",
+      "tag": "section",
+      "props": {
+        "layout": {
+          "display": "stack",
+          "gap": 24,
+          "align": "stretch"
+        },
+        "style": {
+          "backgroundColor": "#ffffff",
+          "color": "#121b29",
+          "padding": {
+            "top": 40,
+            "right": 40,
+            "bottom": 40,
+            "left": 40
+          },
+          "fontFamily": "sans"
+        }
+      },
+      "children": [
+        {
+          "id": "car-node-11",
+          "type": "element",
+          "tag": "p",
+          "props": {
+            "style": {
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "fontSize": 12,
+              "fontWeight": 600,
+              "letterSpacing": 1.5
+            }
+          },
+          "children": [
+            {
+              "id": "car-text-10",
+              "type": "text",
+              "value": "01 / SILHOUETTE"
+            }
+          ]
+        },
+        {
+          "id": "car-node-13",
+          "type": "element",
+          "tag": "h2",
+          "props": {
+            "style": {
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "fontSize": 32,
+              "fontWeight": 700,
+              "lineHeight": 1.3
+            }
+          },
+          "children": [
+            {
+              "id": "car-text-12",
+              "type": "text",
+              "value": "한눈에 들어오는 실루엣"
+            }
+          ]
+        },
+        {
+          "id": "car-node-15",
+          "type": "element",
+          "tag": "p",
+          "props": {
+            "style": {
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "fontSize": 16,
+              "lineHeight": 1.7
+            }
+          },
+          "children": [
+            {
+              "id": "car-text-14",
+              "type": "text",
+              "value": "전면에서 측면으로 이어지는 차체 라인과 창문 테두리, 휠의 대비를 살펴보세요. 첨부 사진에 보이는 외관을 중심으로 구성한 소개입니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "car-features",
+      "type": "element",
+      "tag": "section",
+      "props": {
+        "layout": {
+          "display": "stack",
+          "gap": 24,
+          "align": "stretch"
+        },
+        "style": {
+          "backgroundColor": "#ffffff",
+          "color": "#121b29",
+          "padding": {
+            "top": 40,
+            "right": 40,
+            "bottom": 40,
+            "left": 40
+          },
+          "fontFamily": "sans"
+        }
+      },
+      "children": [
+        {
+          "id": "car-node-18",
+          "type": "element",
+          "tag": "h2",
+          "props": {
+            "style": {
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "fontSize": 32,
+              "fontWeight": 700,
+              "lineHeight": 1.3
+            }
+          },
+          "children": [
+            {
+              "id": "car-text-17",
+              "type": "text",
+              "value": "외관에서 찾은 세 가지 포인트"
+            }
+          ]
+        },
+        {
+          "id": "car-node-34",
+          "type": "element",
+          "tag": "div",
+          "props": {
+            "layout": {
+              "display": "grid",
+              "columns": 3,
+              "gap": 16
+            }
+          },
+          "children": [
+            {
+              "id": "car-node-23",
+              "type": "element",
+              "tag": "article",
+              "props": {
+                "layout": {
+                  "display": "stack",
+                  "gap": 12,
+                  "align": "stretch"
+                },
+                "style": {
+                  "padding": {
+                    "top": 20,
+                    "right": 20,
+                    "bottom": 20,
+                    "left": 20
+                  },
+                  "backgroundColor": "#f3f6f7",
+                  "borderRadius": 12
+                }
+              },
+              "children": [
+                {
+                  "id": "car-node-20",
+                  "type": "element",
+                  "tag": "h3",
+                  "props": {
+                    "style": {
+                      "margin": {
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0,
+                        "left": 0
+                      },
+                      "fontSize": 20,
+                      "fontWeight": 600
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "car-text-19",
+                      "type": "text",
+                      "value": "블랙 바디"
+                    }
+                  ]
+                },
+                {
+                  "id": "car-node-22",
+                  "type": "element",
+                  "tag": "p",
+                  "props": {
+                    "style": {
+                      "margin": {
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0,
+                        "left": 0
+                      },
+                      "fontSize": 16,
+                      "lineHeight": 1.7
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "car-text-21",
+                      "type": "text",
+                      "value": "검은색 차체와 밝게 반사되는 외장 표면이 선명한 대비를 만듭니다."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "car-node-28",
+              "type": "element",
+              "tag": "article",
+              "props": {
+                "layout": {
+                  "display": "stack",
+                  "gap": 12,
+                  "align": "stretch"
+                },
+                "style": {
+                  "padding": {
+                    "top": 20,
+                    "right": 20,
+                    "bottom": 20,
+                    "left": 20
+                  },
+                  "backgroundColor": "#f3f6f7",
+                  "borderRadius": 12
+                }
+              },
+              "children": [
+                {
+                  "id": "car-node-25",
+                  "type": "element",
+                  "tag": "h3",
+                  "props": {
+                    "style": {
+                      "margin": {
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0,
+                        "left": 0
+                      },
+                      "fontSize": 20,
+                      "fontWeight": 600
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "car-text-24",
+                      "type": "text",
+                      "value": "전면 그릴"
+                    }
+                  ]
+                },
+                {
+                  "id": "car-node-27",
+                  "type": "element",
+                  "tag": "p",
+                  "props": {
+                    "style": {
+                      "margin": {
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0,
+                        "left": 0
+                      },
+                      "fontSize": 16,
+                      "lineHeight": 1.7
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "car-text-26",
+                      "type": "text",
+                      "value": "가로 방향의 그릴 패턴과 양옆 헤드램프가 전면 인상을 완성합니다."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "car-node-33",
+              "type": "element",
+              "tag": "article",
+              "props": {
+                "layout": {
+                  "display": "stack",
+                  "gap": 12,
+                  "align": "stretch"
+                },
+                "style": {
+                  "padding": {
+                    "top": 20,
+                    "right": 20,
+                    "bottom": 20,
+                    "left": 20
+                  },
+                  "backgroundColor": "#f3f6f7",
+                  "borderRadius": 12
+                }
+              },
+              "children": [
+                {
+                  "id": "car-node-30",
+                  "type": "element",
+                  "tag": "h3",
+                  "props": {
+                    "style": {
+                      "margin": {
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0,
+                        "left": 0
+                      },
+                      "fontSize": 20,
+                      "fontWeight": 600
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "car-text-29",
+                      "type": "text",
+                      "value": "휠 디자인"
+                    }
+                  ]
+                },
+                {
+                  "id": "car-node-32",
+                  "type": "element",
+                  "tag": "p",
+                  "props": {
+                    "style": {
+                      "margin": {
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0,
+                        "left": 0
+                      },
+                      "fontSize": 16,
+                      "lineHeight": 1.7
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "car-text-31",
+                      "type": "text",
+                      "value": "밝은 면과 어두운 면이 교차하는 휠 디자인을 확인해 보세요."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "car-detail",
+      "type": "element",
+      "tag": "section",
+      "props": {
+        "layout": {
+          "display": "stack",
+          "gap": 24,
+          "align": "stretch"
+        },
+        "style": {
+          "backgroundColor": "#ffffff",
+          "color": "#121b29",
+          "padding": {
+            "top": 40,
+            "right": 40,
+            "bottom": 40,
+            "left": 40
+          },
+          "fontFamily": "sans"
+        }
+      },
+      "children": [
+        {
+          "id": "car-node-37",
+          "type": "element",
+          "tag": "h2",
+          "props": {
+            "style": {
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "fontSize": 32,
+              "fontWeight": 700,
+              "lineHeight": 1.3
+            }
+          },
+          "children": [
+            {
+              "id": "car-text-36",
+              "type": "text",
+              "value": "사진으로 보는 디자인"
+            }
+          ]
+        },
+        {
+          "id": "car-node-39",
+          "type": "element",
+          "tag": "figure",
+          "props": {
+            "style": {
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "car-image-38",
+              "type": "element",
+              "tag": "img",
+              "props": {
+                "imageId": "hero",
+                "alt": "밝은 배경에서 앞쪽과 측면이 보이는 검은색 SUV",
+                "style": {
+                  "objectFit": "contain",
+                  "borderRadius": 12
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "car-node-41",
+          "type": "element",
+          "tag": "p",
+          "props": {
+            "style": {
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "fontSize": 12,
+              "color": "#52606d",
+              "lineHeight": 1.5
+            }
+          },
+          "children": [
+            {
+              "id": "car-text-40",
+              "type": "text",
+              "value": "제공된 동일한 원본 이미지를 다시 사용했습니다."
+            }
+          ]
+        },
+        {
+          "id": "car-node-43",
+          "type": "element",
+          "tag": "p",
+          "props": {
+            "style": {
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "fontSize": 16,
+              "lineHeight": 1.7
+            }
+          },
+          "children": [
+            {
+              "id": "car-text-42",
+              "type": "text",
+              "value": "차체 색상, 그릴의 형태, 휠의 패턴을 함께 확인할 수 있습니다. 별도의 측면·후면 사진이나 실내 이미지는 포함하지 않았습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "car-notice",
+      "type": "element",
+      "tag": "section",
+      "props": {
+        "layout": {
+          "display": "stack",
+          "gap": 24,
+          "align": "stretch"
+        },
+        "style": {
+          "backgroundColor": "#ffffff",
+          "color": "#121b29",
+          "padding": {
+            "top": 40,
+            "right": 40,
+            "bottom": 40,
+            "left": 40
+          },
+          "fontFamily": "sans"
+        }
+      },
+      "children": [
+        {
+          "id": "car-node-46",
+          "type": "element",
+          "tag": "h2",
+          "props": {
+            "style": {
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "fontSize": 32,
+              "fontWeight": 700,
+              "lineHeight": 1.3
+            }
+          },
+          "children": [
+            {
+              "id": "car-text-45",
+              "type": "text",
+              "value": "차량 정보 안내"
+            }
+          ]
+        },
+        {
+          "id": "car-node-53",
+          "type": "element",
+          "tag": "ul",
+          "props": {
+            "layout": {
+              "display": "stack",
+              "gap": 12
+            },
+            "style": {
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "padding": {
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20
+              },
+              "backgroundColor": "#f3f6f7",
+              "borderRadius": 12
+            }
+          },
+          "children": [
+            {
+              "id": "car-node-48",
+              "type": "element",
+              "tag": "li",
+              "props": {
+                "style": {
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "fontSize": 14,
+                  "lineHeight": 1.7
+                }
+              },
+              "children": [
+                {
+                  "id": "car-text-47",
+                  "type": "text",
+                  "value": "차량의 제조사, 모델명, 연식은 제공되지 않았습니다."
+                }
+              ]
+            },
+            {
+              "id": "car-node-50",
+              "type": "element",
+              "tag": "li",
+              "props": {
+                "style": {
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "fontSize": 14,
+                  "lineHeight": 1.7
+                }
+              },
+              "children": [
+                {
+                  "id": "car-text-49",
+                  "type": "text",
+                  "value": "가격, 주행거리, 성능, 옵션 및 사고 이력은 확인된 정보가 없습니다."
+                }
+              ]
+            },
+            {
+              "id": "car-node-52",
+              "type": "element",
+              "tag": "li",
+              "props": {
+                "style": {
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "fontSize": 14,
+                  "lineHeight": 1.7
+                }
+              },
+              "children": [
+                {
+                  "id": "car-text-51",
+                  "type": "text",
+                  "value": "실제 판매에 사용할 때에는 확인된 차량 정보와 고해상도 사진으로 교체해 주세요."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "car-closing",
+      "type": "element",
+      "tag": "section",
+      "props": {
+        "layout": {
+          "display": "stack",
+          "gap": 24,
+          "align": "stretch"
+        },
+        "style": {
+          "backgroundColor": "#121b29",
+          "color": "#ffffff",
+          "padding": {
+            "top": 40,
+            "right": 40,
+            "bottom": 40,
+            "left": 40
+          },
+          "fontFamily": "sans"
+        }
+      },
+      "children": [
+        {
+          "id": "car-node-56",
+          "type": "element",
+          "tag": "h2",
+          "props": {
+            "style": {
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "fontSize": 32,
+              "fontWeight": 700,
+              "lineHeight": 1.3
+            }
+          },
+          "children": [
+            {
+              "id": "car-text-55",
+              "type": "text",
+              "value": "블랙 SUV, 외관을 살펴보다"
+            }
+          ]
+        },
+        {
+          "id": "car-node-58",
+          "type": "element",
+          "tag": "p",
+          "props": {
+            "style": {
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "fontSize": 16,
+              "lineHeight": 1.7
+            }
+          },
+          "children": [
+            {
+              "id": "car-text-57",
+              "type": "text",
+              "value": "제공된 자동차 사진을 활용한 상세페이지 예시입니다."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

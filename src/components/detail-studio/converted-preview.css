@@ -1,0 +1,120 @@
+.cv-host {
+  max-width: 774px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 4px 24px #121b2914;
+}
+.cv-host.cv-mobile {
+  max-width: 375px;
+}
+.cv-host > div {
+  position: relative;
+  overflow: hidden;
+}
+.cv-document {
+  /* 편집 도구와 상품 화면의 전역 서식이 JSON 본문에 상속되지 않게 한다. */
+  color: #101010;
+  font-family: var(--font-pretendard), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: normal;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: top left;
+  background: white;
+  overflow: hidden;
+  white-space: pre-line;
+  overflow-wrap: break-word;
+}
+.cv-document * {
+  box-sizing: border-box;
+}
+/* 빈 문구도 클릭해서 다시 쓸 수 있도록 편집기의 최소 너비를 유지한다. */
+.cv-document :not(.ie-text) {
+  min-width: 0;
+}
+.cv-document img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.cv-document h2,
+.cv-document h3,
+.cv-document h4,
+.cv-document p,
+.cv-document figure {
+  margin: 0;
+}
+.cv-document ul {
+  list-style: disc;
+}
+.cv-document ol {
+  list-style: decimal;
+}
+.cv-document table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.cv-document caption {
+  padding: 0 0 12px;
+  text-align: left;
+}
+.cv-document th,
+.cv-document td {
+  border: 1px solid #cbd1d6;
+  padding: 12px 16px;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+.cv-document th {
+  background-color: #00000006;
+  font-weight: 600;
+}
+.cv-document th[scope="row"] {
+  width: 30%;
+}
+
+.cv-editor .cs-section-list strong {
+  overflow-wrap: anywhere;
+}
+.cv-editor .cs-section-list > button {
+  min-height: 60px;
+}
+.cv-editor .cs-editor-grid.cv-review-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 285px;
+}
+.cv-editor .cv-review-grid > .cs-properties {
+  grid-column: auto;
+}
+.cv-editor .cs-properties-body {
+  display: block;
+}
+.cv-editor .cv-review-grid .cs-properties-body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+}
+.cv-editor .cv-review-grid .cs-properties-body > a {
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
+@media (max-width: 800px) {
+  .cv-editor .cs-editor-grid.cv-review-grid {
+    grid-template-columns: 1fr;
+    height: auto;
+    max-height: none;
+  }
+}
+
+.cv-editor .cs-section-list > button > span:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

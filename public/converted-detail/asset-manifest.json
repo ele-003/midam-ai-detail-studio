@@ -1,0 +1,122 @@
+[
+  {
+    "imageId": "image-1",
+    "alt": "메탈 티웨어 오브제 세트 대표 이미지",
+    "variants": [
+      {
+        "url": "images/image-1-320.webp",
+        "width": 320,
+        "height": 320,
+        "format": "webp"
+      },
+      {
+        "url": "images/image-1-640.webp",
+        "width": 640,
+        "height": 640,
+        "format": "webp"
+      },
+      {
+        "url": "images/image-1-1280.webp",
+        "width": 1280,
+        "height": 1280,
+        "format": "webp"
+      }
+    ]
+  },
+  {
+    "imageId": "image-2",
+    "alt": "서로 다른 실루엣의 구성 상세 이미지",
+    "variants": [
+      {
+        "url": "images/image-2-320.webp",
+        "width": 320,
+        "height": 127,
+        "format": "webp"
+      },
+      {
+        "url": "images/image-2-640.webp",
+        "width": 640,
+        "height": 254,
+        "format": "webp"
+      },
+      {
+        "url": "images/image-2-1280.webp",
+        "width": 1280,
+        "height": 508,
+        "format": "webp"
+      }
+    ]
+  },
+  {
+    "imageId": "image-3",
+    "alt": "메탈 티웨어 오브제 세트 전체 팩샷 이미지",
+    "variants": [
+      {
+        "url": "images/image-3-320.webp",
+        "width": 320,
+        "height": 320,
+        "format": "webp"
+      },
+      {
+        "url": "images/image-3-640.webp",
+        "width": 640,
+        "height": 640,
+        "format": "webp"
+      },
+      {
+        "url": "images/image-3-1280.webp",
+        "width": 1280,
+        "height": 1280,
+        "format": "webp"
+      }
+    ]
+  },
+  {
+    "imageId": "image-4",
+    "alt": "메탈 티웨어 오브제 세트 활용 이미지",
+    "variants": [
+      {
+        "url": "images/image-4-320.webp",
+        "width": 320,
+        "height": 320,
+        "format": "webp"
+      },
+      {
+        "url": "images/image-4-640.webp",
+        "width": 640,
+        "height": 640,
+        "format": "webp"
+      },
+      {
+        "url": "images/image-4-1280.webp",
+        "width": 1280,
+        "height": 1280,
+        "format": "webp"
+      }
+    ]
+  },
+  {
+    "imageId": "image-5",
+    "alt": "메탈 티웨어 오브제 세트 크기 참고 이미지",
+    "variants": [
+      {
+        "url": "images/image-5-320.webp",
+        "width": 320,
+        "height": 213,
+        "format": "webp"
+      },
+      {
+        "url": "images/image-5-640.webp",
+        "width": 640,
+        "height": 427,
+        "format": "webp"
+      },
+      {
+        "url": "images/image-5-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "format": "webp"
+      }
+    ]
+  }
+]

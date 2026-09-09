@@ -1,0 +1,26 @@
+[
+  {
+    "imageId": "hero",
+    "alt": "밝은 배경에서 앞쪽과 측면이 보이는 검은색 SUV",
+    "variants": [
+      {
+        "url": "images/car-320.webp",
+        "width": 320,
+        "height": 196,
+        "format": "webp"
+      },
+      {
+        "url": "images/car-640.webp",
+        "width": 640,
+        "height": 393,
+        "format": "webp"
+      },
+      {
+        "url": "images/car-1280.webp",
+        "width": 1280,
+        "height": 786,
+        "format": "webp"
+      }
+    ]
+  }
+]

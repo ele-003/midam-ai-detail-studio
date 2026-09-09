@@ -16,6 +16,12 @@
 
 ## 2. 브랜치 전략
 
+> **개인 프로토타입 저장소 예외 (`ele-003/midam-ai-detail-studio`)**
+>
+> 이 저장소에서는 `main`을 `Jangingmall/frontend` 원본 코드 동기화용으로 유지하고, `dev`를 프로토타입 통합·Vercel Production 배포 브랜치로 사용한다. 아래 팀 공통 규칙 중 `dev → main` 배포 절차는 적용하지 않는다.
+>
+> 프로토타입 변경은 `codex/작업명` 등 작업 브랜치에서 커밋·푸시한 뒤, 필수 CI를 통과한 PR을 `dev`로 병합한다. Vercel의 Production Branch는 `dev`로 지정한다. 원본 업데이트는 `main`에서 확인한 뒤 필요한 변경을 PR로 `dev`에 반영한다. 현재 프로토타입의 시작 기준은 원본 `upstream/dev`의 `531504e` 커밋이다.
+
 ### 2.1 브랜치 구조
 
 | 브랜치         | 역할                                 |

@@ -1,0 +1,203 @@
+@layer components {
+  .sh-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--fill-jade-weak);
+    border: 1px solid var(--border-jade-weak);
+    padding: 56px 64px;
+    min-height: 400px;
+    overflow: hidden;
+    margin: 32px 0 56px;
+  }
+  .sh-hero h1 {
+    font-size: var(--text-display-l);
+    font-weight: 600;
+    line-height: var(--text-display-l--line-height);
+    margin: 16px 0;
+  }
+  .sh-hero p {
+    color: var(--font-dark-subtle);
+    font-size: var(--text-body-l);
+    line-height: var(--text-body-l--line-height);
+  }
+  .sh-create {
+    margin-top: 32px;
+  }
+  .sh-hero-art {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sh-hero-art > span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--fill-jade);
+    font-size: var(--text-display-l);
+    line-height: 1;
+    font-weight: 600;
+  }
+  .sh-paper {
+    position: relative;
+    transform: rotate(7deg);
+    background: var(--bg-default);
+    padding: 24px;
+    box-shadow: var(--shadow-floating);
+    width: 260px;
+  }
+  .sh-paper small {
+    font-size: var(--text-caption);
+  }
+  .sh-paper img {
+    width: 100%;
+    height: 152px;
+    object-fit: contain;
+    margin: 12px 0;
+  }
+  .sh-paper strong {
+    font-size: var(--text-title-m);
+    font-weight: 600;
+    line-height: var(--text-title-m--line-height);
+  }
+  .sh-hero-art i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: var(--text-body-s);
+    color: var(--font-dark-subtle);
+    font-style: normal;
+  }
+  .sh-project-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .sh-project-heading h2 {
+    font-size: var(--text-title-xl);
+    font-weight: 600;
+    margin: 12px 0;
+  }
+  .sh-project-heading small {
+    color: var(--font-dark-subtle);
+    font-size: var(--text-title-m);
+    margin-left: 8px;
+  }
+  .sh-project-heading p {
+    color: var(--font-dark-subtle);
+    font-size: var(--text-body-s);
+  }
+  .sh-filters {
+    display: flex;
+    gap: 8px;
+    margin: 24px 0;
+  }
+  .sh-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+  .sh-card {
+    background: var(--bg-default);
+    border: 1px solid var(--border-neutral-subtle);
+    transition:
+      box-shadow 0.2s,
+      transform 0.2s;
+  }
+  .sh-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-floating);
+  }
+  .sh-thumbnail {
+    position: relative;
+    height: 248px;
+    background: var(--bg-subtle);
+    overflow: hidden;
+  }
+  .sh-thumbnail img {
+    object-fit: contain;
+    padding: 24px;
+  }
+  .sh-thumbnail > span {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+  }
+  .sh-card-body {
+    padding: 24px;
+  }
+  .sh-card-body small {
+    font-size: var(--text-body-s);
+    color: var(--font-dark-subtle);
+  }
+  .sh-card-body h3 {
+    font-size: var(--text-title-m);
+    font-weight: 600;
+    margin: 8px 0 24px;
+  }
+  .sh-card-body p {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--text-body-s);
+    color: var(--font-dark-subtle);
+  }
+  .sh-card-body p span {
+    font-size: var(--text-title-l);
+    color: var(--font-dark);
+  }
+  .sh-empty {
+    padding: 64px 24px;
+    text-align: center;
+    background: var(--bg-subtle);
+    color: var(--font-dark-subtle);
+  }
+  .sh-projects {
+    min-height: 420px;
+    margin-bottom: 56px;
+  }
+  @media (max-width: 900px) {
+    .sh-hero {
+      padding: 32px;
+    }
+    .sh-hero h1 {
+      font-size: var(--text-display-m);
+    }
+    .sh-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .sh-hero-art > span {
+      font-size: var(--text-display-m);
+    }
+    .sh-hero-art i {
+      display: none;
+    }
+  }
+  @media (max-width: 640px) {
+    .sh-hero {
+      grid-template-columns: 1fr;
+      padding: 32px 24px;
+      margin-bottom: 40px;
+    }
+    .sh-hero-art {
+      display: none;
+    }
+    .sh-project-heading {
+      display: block;
+    }
+    .sh-project-heading p {
+      margin-top: 8px;
+    }
+    .sh-grid {
+      grid-template-columns: 1fr;
+    }
+    .sh-thumbnail {
+      height: 232px;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .sh-card {
+      transition: none;
+    }
+  }
+}

@@ -1,0 +1,723 @@
+{
+  "sections": 14,
+  "nodes": 154,
+  "maxDepth": 5,
+  "imageNodes": 12,
+  "uniqueImages": 5,
+  "sourceFont": "Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", Arial, sans-serif",
+  "warnings": [
+    {
+      "nodeId": "node-1",
+      "source": "header",
+      "conversion": "section",
+      "reason": "허용 태그/최상위 section 규칙 적용"
+    },
+    {
+      "nodeId": "node-1",
+      "property": "border sides",
+      "value": [0, 0, 1, 0],
+      "reason": "방향별 테두리는 기존 style에 없어 생략"
+    },
+    {
+      "nodeId": "node-1",
+      "property": "justify-content",
+      "value": "space-between",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-6",
+      "property": "gridTemplateColumns",
+      "value": "309.594px 464.391px",
+      "reason": "기존 계약은 열 개수만 표현하므로 동일 너비 열로 변환"
+    },
+    {
+      "nodeId": "node-6",
+      "property": "min-height",
+      "value": "526px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-7",
+      "property": "align-self",
+      "value": "center",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-10",
+      "source": "h1",
+      "conversion": "h2",
+      "reason": "허용 태그/최상위 section 규칙 적용"
+    },
+    {
+      "nodeId": "node-12",
+      "property": "word-break",
+      "value": "keep-all",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-27",
+      "property": "min-height",
+      "value": "526px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-28",
+      "property": "width",
+      "value": "100%",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-28",
+      "property": "height",
+      "value": "100%",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-28",
+      "property": "min-height",
+      "value": "526px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-28",
+      "property": "overflow-x",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-28",
+      "property": "overflow-y",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-29",
+      "property": "gridTemplateColumns",
+      "value": "70px 278px 278px",
+      "reason": "기존 계약은 열 개수만 표현하므로 동일 너비 열로 변환"
+    },
+    {
+      "nodeId": "node-29",
+      "property": "grid alignItems",
+      "value": "center",
+      "reason": "기존 grid layout에는 align이 없음"
+    },
+    {
+      "nodeId": "node-35",
+      "property": "word-break",
+      "value": "keep-all",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-37",
+      "property": "word-break",
+      "value": "keep-all",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-39",
+      "property": "gridTemplateColumns",
+      "value": "257.328px 257.328px 257.344px",
+      "reason": "기존 계약은 열 개수만 표현하므로 동일 너비 열로 변환"
+    },
+    {
+      "nodeId": "node-40",
+      "property": "min-height",
+      "value": "174px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-41",
+      "property": "width",
+      "value": "20px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-41",
+      "property": "height",
+      "value": "3px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-44",
+      "property": "word-break",
+      "value": "keep-all",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-46",
+      "property": "min-height",
+      "value": "174px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-47",
+      "property": "width",
+      "value": "20px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-47",
+      "property": "height",
+      "value": "3px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-50",
+      "property": "word-break",
+      "value": "keep-all",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-52",
+      "property": "min-height",
+      "value": "174px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-53",
+      "property": "width",
+      "value": "20px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-53",
+      "property": "height",
+      "value": "3px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-56",
+      "property": "word-break",
+      "value": "keep-all",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-61",
+      "property": "word-break",
+      "value": "keep-all",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-65",
+      "property": "min-height",
+      "value": "387px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-66",
+      "property": "min-height",
+      "value": "387px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-66",
+      "property": "overflow-x",
+      "value": "hidden",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-66",
+      "property": "overflow-y",
+      "value": "hidden",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-67",
+      "property": "width",
+      "value": "100%",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-67",
+      "property": "height",
+      "value": "100%",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-67",
+      "property": "overflow-x",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-67",
+      "property": "overflow-y",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-68",
+      "property": "align-self",
+      "value": "center",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-71",
+      "property": "word-break",
+      "value": "keep-all",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-73",
+      "property": "word-break",
+      "value": "keep-all",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-75",
+      "property": "min-height",
+      "value": "387px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-76",
+      "property": "min-height",
+      "value": "387px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-76",
+      "property": "order",
+      "value": "2",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-76",
+      "property": "overflow-x",
+      "value": "hidden",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-76",
+      "property": "overflow-y",
+      "value": "hidden",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-77",
+      "property": "width",
+      "value": "100%",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-77",
+      "property": "height",
+      "value": "100%",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-77",
+      "property": "overflow-x",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-77",
+      "property": "overflow-y",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-78",
+      "property": "align-self",
+      "value": "center",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-78",
+      "property": "order",
+      "value": "1",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-81",
+      "property": "word-break",
+      "value": "keep-all",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-83",
+      "property": "word-break",
+      "value": "keep-all",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-85",
+      "property": "min-height",
+      "value": "387px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-86",
+      "property": "min-height",
+      "value": "387px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-86",
+      "property": "overflow-x",
+      "value": "hidden",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-86",
+      "property": "overflow-y",
+      "value": "hidden",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-87",
+      "property": "width",
+      "value": "100%",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-87",
+      "property": "height",
+      "value": "100%",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-87",
+      "property": "overflow-x",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-87",
+      "property": "overflow-y",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-88",
+      "property": "align-self",
+      "value": "center",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-91",
+      "property": "word-break",
+      "value": "keep-all",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-93",
+      "property": "word-break",
+      "value": "keep-all",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-99",
+      "property": "word-break",
+      "value": "keep-all",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-101",
+      "property": "height",
+      "value": "330px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-101",
+      "property": "overflow-x",
+      "value": "hidden",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-101",
+      "property": "overflow-y",
+      "value": "hidden",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-102",
+      "property": "width",
+      "value": "100%",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-102",
+      "property": "height",
+      "value": "100%",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-102",
+      "property": "overflow-x",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-102",
+      "property": "overflow-y",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-107",
+      "property": "word-break",
+      "value": "keep-all",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-109",
+      "property": "gridTemplateColumns",
+      "value": "216.656px 216.672px 216.672px",
+      "reason": "기존 계약은 열 개수만 표현하므로 동일 너비 열로 변환"
+    },
+    {
+      "nodeId": "node-110",
+      "property": "width",
+      "value": "100%",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-110",
+      "property": "height",
+      "value": "205px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-110",
+      "property": "overflow-x",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-110",
+      "property": "overflow-y",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-111",
+      "property": "width",
+      "value": "100%",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-111",
+      "property": "height",
+      "value": "205px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-111",
+      "property": "overflow-x",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-111",
+      "property": "overflow-y",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-112",
+      "property": "width",
+      "value": "100%",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-112",
+      "property": "height",
+      "value": "205px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-112",
+      "property": "overflow-x",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-112",
+      "property": "overflow-y",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-114",
+      "property": "width",
+      "value": "100%",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-114",
+      "property": "height",
+      "value": "265px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-114",
+      "property": "overflow-x",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-114",
+      "property": "overflow-y",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-115",
+      "property": "width",
+      "value": "100%",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-115",
+      "property": "height",
+      "value": "265px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-115",
+      "property": "overflow-x",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-115",
+      "property": "overflow-y",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-116",
+      "property": "grid alignItems",
+      "value": "center",
+      "reason": "기존 grid layout에는 align이 없음"
+    },
+    {
+      "nodeId": "node-120",
+      "property": "word-break",
+      "value": "keep-all",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-120",
+      "property": "br",
+      "reason": "br를 개행 문자로 변환. FE에서 개행을 보존하는 처리가 필요합니다."
+    },
+    {
+      "nodeId": "node-124",
+      "property": "word-break",
+      "value": "keep-all",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-126",
+      "property": "height",
+      "value": "270px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-126",
+      "property": "overflow-x",
+      "value": "hidden",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-126",
+      "property": "overflow-y",
+      "value": "hidden",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-127",
+      "property": "width",
+      "value": "100%",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-127",
+      "property": "height",
+      "value": "100%",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-127",
+      "property": "overflow-x",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-127",
+      "property": "overflow-y",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-132",
+      "property": "word-break",
+      "value": "keep-all",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-134",
+      "property": "height",
+      "value": "330px",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-134",
+      "property": "overflow-x",
+      "value": "hidden",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-134",
+      "property": "overflow-y",
+      "value": "hidden",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-135",
+      "property": "width",
+      "value": "100%",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-135",
+      "property": "height",
+      "value": "100%",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-135",
+      "property": "overflow-x",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-135",
+      "property": "overflow-y",
+      "value": "clip",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-139",
+      "property": "word-break",
+      "value": "keep-all",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    },
+    {
+      "nodeId": "node-150",
+      "source": "footer",
+      "conversion": "section",
+      "reason": "허용 태그/최상위 section 규칙 적용"
+    },
+    {
+      "nodeId": "node-150",
+      "property": "justify-content",
+      "value": "space-between",
+      "reason": "기존 style/layout에 대응 필드가 없어 생략"
+    }
+  ]
+}
