@@ -1,0 +1,12 @@
+{
+  "sections": 6,
+  "nodes": 59,
+  "maxDepth": 5,
+  "imageIds": ["hero"],
+  "sourceImage": {
+    "width": 233,
+    "height": 143
+  },
+  "schemaValidation": "passed",
+  "fieldPreservation": "passed"
+}

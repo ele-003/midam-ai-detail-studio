@@ -1,0 +1,3477 @@
+{
+  "schemaVersion": "2.0",
+  "canvasWidth": 774,
+  "root": [
+    {
+      "id": "node-1",
+      "type": "element",
+      "tag": "section",
+      "props": {
+        "style": {
+          "color": "#414954",
+          "fontFamily": "sans",
+          "fontSize": 10,
+          "fontWeight": 400,
+          "lineHeight": 1.2,
+          "letterSpacing": 1.2,
+          "textAlign": "left",
+          "padding": {
+            "top": 18,
+            "right": 42,
+            "bottom": 18,
+            "left": 42
+          },
+          "margin": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        "layout": {
+          "display": "flex",
+          "direction": "row",
+          "gap": 0,
+          "wrap": false
+        }
+      },
+      "children": [
+        {
+          "id": "node-2",
+          "type": "element",
+          "tag": "span",
+          "props": {
+            "style": {
+              "color": "#414954",
+              "fontFamily": "sans",
+              "fontSize": 10,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 1.2,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-3",
+              "type": "text",
+              "value": "PRODUCT DETAIL"
+            }
+          ]
+        },
+        {
+          "id": "node-4",
+          "type": "element",
+          "tag": "span",
+          "props": {
+            "style": {
+              "color": "#414954",
+              "fontFamily": "sans",
+              "fontSize": 10,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-5",
+              "type": "text",
+              "value": "메탈 티웨어 오브제 세트"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node-6",
+      "type": "element",
+      "tag": "section",
+      "props": {
+        "style": {
+          "color": "#101010",
+          "fontFamily": "sans",
+          "fontSize": 16,
+          "fontWeight": 400,
+          "lineHeight": 1.2,
+          "letterSpacing": 0,
+          "textAlign": "left",
+          "backgroundColor": "#FAFBFC",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "margin": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        "layout": {
+          "display": "grid",
+          "columns": 2,
+          "gap": 0
+        }
+      },
+      "children": [
+        {
+          "id": "node-7",
+          "type": "element",
+          "tag": "div",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 48,
+                "right": 12,
+                "bottom": 48,
+                "left": 54
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-8",
+              "type": "element",
+              "tag": "span",
+              "props": {
+                "style": {
+                  "color": "#414954",
+                  "fontFamily": "sans",
+                  "fontSize": 10,
+                  "fontWeight": 700,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0.8,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-9",
+                  "type": "text",
+                  "value": "IMAGE-BASED PRODUCT STORY"
+                }
+              ]
+            },
+            {
+              "id": "node-10",
+              "type": "element",
+              "tag": "h2",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 28,
+                  "fontWeight": 700,
+                  "lineHeight": 1.3,
+                  "letterSpacing": -1.54,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 18,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-11",
+                  "type": "text",
+                  "value": "메탈 티웨어 오브제 세트"
+                }
+              ]
+            },
+            {
+              "id": "node-12",
+              "type": "element",
+              "tag": "p",
+              "props": {
+                "style": {
+                  "color": "#414954",
+                  "fontFamily": "sans",
+                  "fontSize": 13,
+                  "fontWeight": 400,
+                  "lineHeight": 1.6,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 20,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-13",
+                  "type": "text",
+                  "value": "서로 다른 실루엣의 금속 광택 용기와 잔, 주전자 형태의 오브제가 한 장면에 어우러진 티타임 스타일 세트입니다."
+                }
+              ]
+            },
+            {
+              "id": "node-14",
+              "type": "element",
+              "tag": "div",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 16,
+                  "fontWeight": 400,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 28,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                },
+                "layout": {
+                  "display": "flex",
+                  "direction": "row",
+                  "gap": 6,
+                  "wrap": true
+                }
+              },
+              "children": [
+                {
+                  "id": "node-15",
+                  "type": "element",
+                  "tag": "span",
+                  "props": {
+                    "style": {
+                      "color": "#414954",
+                      "fontFamily": "sans",
+                      "fontSize": 10,
+                      "fontWeight": 400,
+                      "lineHeight": 1.2,
+                      "letterSpacing": 0,
+                      "textAlign": "left",
+                      "padding": {
+                        "top": 6,
+                        "right": 9,
+                        "bottom": 6,
+                        "left": 9
+                      },
+                      "margin": {
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0,
+                        "left": 0
+                      },
+                      "borderWidth": 1,
+                      "borderColor": "#C8D9DC",
+                      "borderRadius": 99
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "node-16",
+                      "type": "text",
+                      "value": "#메탈 오브제"
+                    }
+                  ]
+                },
+                {
+                  "id": "node-17",
+                  "type": "element",
+                  "tag": "span",
+                  "props": {
+                    "style": {
+                      "color": "#414954",
+                      "fontFamily": "sans",
+                      "fontSize": 10,
+                      "fontWeight": 400,
+                      "lineHeight": 1.2,
+                      "letterSpacing": 0,
+                      "textAlign": "left",
+                      "padding": {
+                        "top": 6,
+                        "right": 9,
+                        "bottom": 6,
+                        "left": 9
+                      },
+                      "margin": {
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0,
+                        "left": 0
+                      },
+                      "borderWidth": 1,
+                      "borderColor": "#C8D9DC",
+                      "borderRadius": 99
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "node-18",
+                      "type": "text",
+                      "value": "#티웨어"
+                    }
+                  ]
+                },
+                {
+                  "id": "node-19",
+                  "type": "element",
+                  "tag": "span",
+                  "props": {
+                    "style": {
+                      "color": "#414954",
+                      "fontFamily": "sans",
+                      "fontSize": 10,
+                      "fontWeight": 400,
+                      "lineHeight": 1.2,
+                      "letterSpacing": 0,
+                      "textAlign": "left",
+                      "padding": {
+                        "top": 6,
+                        "right": 9,
+                        "bottom": 6,
+                        "left": 9
+                      },
+                      "margin": {
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0,
+                        "left": 0
+                      },
+                      "borderWidth": 1,
+                      "borderColor": "#C8D9DC",
+                      "borderRadius": 99
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "node-20",
+                      "type": "text",
+                      "value": "#광택 표면"
+                    }
+                  ]
+                },
+                {
+                  "id": "node-21",
+                  "type": "element",
+                  "tag": "span",
+                  "props": {
+                    "style": {
+                      "color": "#414954",
+                      "fontFamily": "sans",
+                      "fontSize": 10,
+                      "fontWeight": 400,
+                      "lineHeight": 1.2,
+                      "letterSpacing": 0,
+                      "textAlign": "left",
+                      "padding": {
+                        "top": 6,
+                        "right": 9,
+                        "bottom": 6,
+                        "left": 9
+                      },
+                      "margin": {
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0,
+                        "left": 0
+                      },
+                      "borderWidth": 1,
+                      "borderColor": "#C8D9DC",
+                      "borderRadius": 99
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "node-22",
+                      "type": "text",
+                      "value": "#주전자 형태"
+                    }
+                  ]
+                },
+                {
+                  "id": "node-23",
+                  "type": "element",
+                  "tag": "span",
+                  "props": {
+                    "style": {
+                      "color": "#414954",
+                      "fontFamily": "sans",
+                      "fontSize": 10,
+                      "fontWeight": 400,
+                      "lineHeight": 1.2,
+                      "letterSpacing": 0,
+                      "textAlign": "left",
+                      "padding": {
+                        "top": 6,
+                        "right": 9,
+                        "bottom": 6,
+                        "left": 9
+                      },
+                      "margin": {
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0,
+                        "left": 0
+                      },
+                      "borderWidth": 1,
+                      "borderColor": "#C8D9DC",
+                      "borderRadius": 99
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "node-24",
+                      "type": "text",
+                      "value": "#컵과 받침"
+                    }
+                  ]
+                },
+                {
+                  "id": "node-25",
+                  "type": "element",
+                  "tag": "span",
+                  "props": {
+                    "style": {
+                      "color": "#414954",
+                      "fontFamily": "sans",
+                      "fontSize": 10,
+                      "fontWeight": 400,
+                      "lineHeight": 1.2,
+                      "letterSpacing": 0,
+                      "textAlign": "left",
+                      "padding": {
+                        "top": 6,
+                        "right": 9,
+                        "bottom": 6,
+                        "left": 9
+                      },
+                      "margin": {
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0,
+                        "left": 0
+                      },
+                      "borderWidth": 1,
+                      "borderColor": "#C8D9DC",
+                      "borderRadius": 99
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "node-26",
+                      "type": "text",
+                      "value": "#테이블 데코"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "node-27",
+          "type": "element",
+          "tag": "div",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-28",
+              "type": "element",
+              "tag": "img",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 16,
+                  "fontWeight": 400,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "objectFit": "cover",
+                  "objectPosition": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "imageId": "image-1",
+                "alt": "메탈 티웨어 오브제 세트 대표 이미지"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node-29",
+      "type": "element",
+      "tag": "section",
+      "props": {
+        "style": {
+          "color": "#FFFFFF",
+          "fontFamily": "sans",
+          "fontSize": 16,
+          "fontWeight": 400,
+          "lineHeight": 1.2,
+          "letterSpacing": 0,
+          "textAlign": "left",
+          "backgroundColor": "#101010",
+          "padding": {
+            "top": 54,
+            "right": 54,
+            "bottom": 54,
+            "left": 54
+          },
+          "margin": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        "layout": {
+          "display": "grid",
+          "columns": 3,
+          "gap": 20
+        }
+      },
+      "children": [
+        {
+          "id": "node-30",
+          "type": "element",
+          "tag": "span",
+          "props": {
+            "style": {
+              "color": "#FFC14C",
+              "fontFamily": "sans",
+              "fontSize": 17,
+              "fontWeight": 700,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-31",
+              "type": "text",
+              "value": "01"
+            }
+          ]
+        },
+        {
+          "id": "node-32",
+          "type": "element",
+          "tag": "div",
+          "props": {
+            "style": {
+              "color": "#FFFFFF",
+              "fontFamily": "sans",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-33",
+              "type": "element",
+              "tag": "span",
+              "props": {
+                "style": {
+                  "color": "#C8D9DC",
+                  "fontFamily": "sans",
+                  "fontSize": 10,
+                  "fontWeight": 700,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0.8,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-34",
+                  "type": "text",
+                  "value": "CORE VALUE"
+                }
+              ]
+            },
+            {
+              "id": "node-35",
+              "type": "element",
+              "tag": "h2",
+              "props": {
+                "style": {
+                  "color": "#FFFFFF",
+                  "fontFamily": "sans",
+                  "fontSize": 22,
+                  "fontWeight": 700,
+                  "lineHeight": 1.35,
+                  "letterSpacing": -1.1,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 10,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-36",
+                  "type": "text",
+                  "value": "빛을 머금은 티타임 오브제"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "node-37",
+          "type": "element",
+          "tag": "p",
+          "props": {
+            "style": {
+              "color": "#C4C7CA",
+              "fontFamily": "sans",
+              "fontSize": 13,
+              "fontWeight": 400,
+              "lineHeight": 1.65,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-38",
+              "type": "text",
+              "value": "서로 다른 금속 표면과 실루엣이 한 장면 안에서 차분한 리듬을 만듭니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node-39",
+      "type": "element",
+      "tag": "section",
+      "props": {
+        "style": {
+          "color": "#101010",
+          "fontFamily": "sans",
+          "fontSize": 16,
+          "fontWeight": 400,
+          "lineHeight": 1.2,
+          "letterSpacing": 0,
+          "textAlign": "left",
+          "backgroundColor": "#C4C7CA",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "margin": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        "layout": {
+          "display": "grid",
+          "columns": 3,
+          "gap": 1
+        }
+      },
+      "children": [
+        {
+          "id": "node-40",
+          "type": "element",
+          "tag": "article",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "backgroundColor": "#FFFFFF",
+              "padding": {
+                "top": 32,
+                "right": 28,
+                "bottom": 32,
+                "left": 28
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-41",
+              "type": "element",
+              "tag": "span",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 16,
+                  "fontWeight": 400,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "backgroundColor": "#C8D9DC",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 24,
+                    "left": 0
+                  }
+                }
+              }
+            },
+            {
+              "id": "node-42",
+              "type": "element",
+              "tag": "h3",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 17,
+                  "fontWeight": 700,
+                  "lineHeight": 1.4,
+                  "letterSpacing": -0.68,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-43",
+                  "type": "text",
+                  "value": "서로 다른 실루엣의 구성"
+                }
+              ]
+            },
+            {
+              "id": "node-44",
+              "type": "element",
+              "tag": "p",
+              "props": {
+                "style": {
+                  "color": "#414954",
+                  "fontFamily": "sans",
+                  "fontSize": 13,
+                  "fontWeight": 400,
+                  "lineHeight": 1.55,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 12,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-45",
+                  "type": "text",
+                  "value": "둥근 몸체의 용기와 손잡이가 있는 주전자 형태, 작은 잔과 받침이 한 세트처럼 펼쳐져 있습니다."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "node-46",
+          "type": "element",
+          "tag": "article",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "backgroundColor": "#FFFFFF",
+              "padding": {
+                "top": 32,
+                "right": 28,
+                "bottom": 32,
+                "left": 28
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-47",
+              "type": "element",
+              "tag": "span",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 16,
+                  "fontWeight": 400,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "backgroundColor": "#E84610",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 24,
+                    "left": 0
+                  }
+                }
+              }
+            },
+            {
+              "id": "node-48",
+              "type": "element",
+              "tag": "h3",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 17,
+                  "fontWeight": 700,
+                  "lineHeight": 1.4,
+                  "letterSpacing": -0.68,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-49",
+                  "type": "text",
+                  "value": "빛을 반사하는 표면감"
+                }
+              ]
+            },
+            {
+              "id": "node-50",
+              "type": "element",
+              "tag": "p",
+              "props": {
+                "style": {
+                  "color": "#414954",
+                  "fontFamily": "sans",
+                  "fontSize": 13,
+                  "fontWeight": 400,
+                  "lineHeight": 1.55,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 12,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-51",
+                  "type": "text",
+                  "value": "각 오브제 표면에 밝은 하이라이트와 어두운 반사 영역이 교차해 입체적인 금속 질감을 보여 줍니다."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "node-52",
+          "type": "element",
+          "tag": "article",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "backgroundColor": "#FFFFFF",
+              "padding": {
+                "top": 32,
+                "right": 28,
+                "bottom": 32,
+                "left": 28
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-53",
+              "type": "element",
+              "tag": "span",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 16,
+                  "fontWeight": 400,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "backgroundColor": "#FFC14C",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 24,
+                    "left": 0
+                  }
+                }
+              }
+            },
+            {
+              "id": "node-54",
+              "type": "element",
+              "tag": "h3",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 17,
+                  "fontWeight": 700,
+                  "lineHeight": 1.4,
+                  "letterSpacing": -0.68,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-55",
+                  "type": "text",
+                  "value": "티타임을 연상시키는 디테일"
+                }
+              ]
+            },
+            {
+              "id": "node-56",
+              "type": "element",
+              "tag": "p",
+              "props": {
+                "style": {
+                  "color": "#414954",
+                  "fontFamily": "sans",
+                  "fontSize": 13,
+                  "fontWeight": 400,
+                  "lineHeight": 1.55,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 12,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-57",
+                  "type": "text",
+                  "value": "작은 잔과 받침, 주전자 형태의 오브제가 함께 놓여 차를 즐기는 장면을 떠올리게 합니다."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node-58",
+      "type": "element",
+      "tag": "section",
+      "props": {
+        "style": {
+          "color": "#101010",
+          "fontFamily": "sans",
+          "fontSize": 16,
+          "fontWeight": 400,
+          "lineHeight": 1.2,
+          "letterSpacing": 0,
+          "textAlign": "left",
+          "padding": {
+            "top": 72,
+            "right": 54,
+            "bottom": 38,
+            "left": 54
+          },
+          "margin": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      },
+      "children": [
+        {
+          "id": "node-59",
+          "type": "element",
+          "tag": "span",
+          "props": {
+            "style": {
+              "color": "#414954",
+              "fontFamily": "sans",
+              "fontSize": 10,
+              "fontWeight": 700,
+              "lineHeight": 1.2,
+              "letterSpacing": 0.8,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-60",
+              "type": "text",
+              "value": "VISIBLE DETAILS"
+            }
+          ]
+        },
+        {
+          "id": "node-61",
+          "type": "element",
+          "tag": "h2",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 22,
+              "fontWeight": 700,
+              "lineHeight": 1.35,
+              "letterSpacing": -1.1,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 10,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-62",
+              "type": "text",
+              "value": "가까이 볼수록 선명해지는 디테일"
+            }
+          ]
+        },
+        {
+          "id": "node-63",
+          "type": "element",
+          "tag": "p",
+          "props": {
+            "style": {
+              "color": "#414954",
+              "fontFamily": "sans",
+              "fontSize": 13,
+              "fontWeight": 400,
+              "lineHeight": 1.6,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 12,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-64",
+              "type": "text",
+              "value": "원본 이미지에서 확인되는 요소를 중심으로 구성한 상세 컷입니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node-65",
+      "type": "element",
+      "tag": "section",
+      "props": {
+        "style": {
+          "color": "#101010",
+          "fontFamily": "sans",
+          "fontSize": 16,
+          "fontWeight": 400,
+          "lineHeight": 1.2,
+          "letterSpacing": 0,
+          "textAlign": "left",
+          "backgroundColor": "#FAFBFC",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "margin": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        "layout": {
+          "display": "grid",
+          "columns": 2,
+          "gap": 0
+        }
+      },
+      "children": [
+        {
+          "id": "node-66",
+          "type": "element",
+          "tag": "div",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-67",
+              "type": "element",
+              "tag": "img",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 16,
+                  "fontWeight": 400,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "objectFit": "cover",
+                  "objectPosition": {
+                    "x": 50,
+                    "y": 0
+                  }
+                },
+                "imageId": "image-2",
+                "alt": "서로 다른 실루엣의 구성 상세 이미지"
+              }
+            }
+          ]
+        },
+        {
+          "id": "node-68",
+          "type": "element",
+          "tag": "div",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 42,
+                "right": 42,
+                "bottom": 42,
+                "left": 42
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-69",
+              "type": "element",
+              "tag": "span",
+              "props": {
+                "style": {
+                  "color": "#80858C",
+                  "fontFamily": "sans",
+                  "fontSize": 10,
+                  "fontWeight": 700,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0.8,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-70",
+                  "type": "text",
+                  "value": "DETAIL 01"
+                }
+              ]
+            },
+            {
+              "id": "node-71",
+              "type": "element",
+              "tag": "h2",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 22,
+                  "fontWeight": 700,
+                  "lineHeight": 1.35,
+                  "letterSpacing": -1.1,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 14,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-72",
+                  "type": "text",
+                  "value": "서로 다른 실루엣의 구성"
+                }
+              ]
+            },
+            {
+              "id": "node-73",
+              "type": "element",
+              "tag": "p",
+              "props": {
+                "style": {
+                  "color": "#414954",
+                  "fontFamily": "sans",
+                  "fontSize": 13,
+                  "fontWeight": 400,
+                  "lineHeight": 1.7,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 18,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-74",
+                  "type": "text",
+                  "value": "둥근 몸체의 용기와 손잡이가 있는 주전자 형태, 작은 잔과 받침이 한 세트처럼 펼쳐져 있습니다."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node-75",
+      "type": "element",
+      "tag": "section",
+      "props": {
+        "style": {
+          "color": "#101010",
+          "fontFamily": "sans",
+          "fontSize": 16,
+          "fontWeight": 400,
+          "lineHeight": 1.2,
+          "letterSpacing": 0,
+          "textAlign": "left",
+          "backgroundColor": "#FAFBFC",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "margin": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        "layout": {
+          "display": "grid",
+          "columns": 2,
+          "gap": 0
+        }
+      },
+      "children": [
+        {
+          "id": "node-76",
+          "type": "element",
+          "tag": "div",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-77",
+              "type": "element",
+              "tag": "img",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 16,
+                  "fontWeight": 400,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "objectFit": "cover",
+                  "objectPosition": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "imageId": "image-2",
+                "alt": "빛을 반사하는 표면감 상세 이미지"
+              }
+            }
+          ]
+        },
+        {
+          "id": "node-78",
+          "type": "element",
+          "tag": "div",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 42,
+                "right": 42,
+                "bottom": 42,
+                "left": 42
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-79",
+              "type": "element",
+              "tag": "span",
+              "props": {
+                "style": {
+                  "color": "#80858C",
+                  "fontFamily": "sans",
+                  "fontSize": 10,
+                  "fontWeight": 700,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0.8,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-80",
+                  "type": "text",
+                  "value": "DETAIL 02"
+                }
+              ]
+            },
+            {
+              "id": "node-81",
+              "type": "element",
+              "tag": "h2",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 22,
+                  "fontWeight": 700,
+                  "lineHeight": 1.35,
+                  "letterSpacing": -1.1,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 14,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-82",
+                  "type": "text",
+                  "value": "빛을 반사하는 표면감"
+                }
+              ]
+            },
+            {
+              "id": "node-83",
+              "type": "element",
+              "tag": "p",
+              "props": {
+                "style": {
+                  "color": "#414954",
+                  "fontFamily": "sans",
+                  "fontSize": 13,
+                  "fontWeight": 400,
+                  "lineHeight": 1.7,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 18,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-84",
+                  "type": "text",
+                  "value": "각 오브제 표면에 밝은 하이라이트와 어두운 반사 영역이 교차해 입체적인 금속 질감을 보여 줍니다."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node-85",
+      "type": "element",
+      "tag": "section",
+      "props": {
+        "style": {
+          "color": "#101010",
+          "fontFamily": "sans",
+          "fontSize": 16,
+          "fontWeight": 400,
+          "lineHeight": 1.2,
+          "letterSpacing": 0,
+          "textAlign": "left",
+          "backgroundColor": "#FAFBFC",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "margin": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        "layout": {
+          "display": "grid",
+          "columns": 2,
+          "gap": 0
+        }
+      },
+      "children": [
+        {
+          "id": "node-86",
+          "type": "element",
+          "tag": "div",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-87",
+              "type": "element",
+              "tag": "img",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 16,
+                  "fontWeight": 400,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "objectFit": "cover",
+                  "objectPosition": {
+                    "x": 50,
+                    "y": 100
+                  }
+                },
+                "imageId": "image-2",
+                "alt": "티타임을 연상시키는 디테일 상세 이미지"
+              }
+            }
+          ]
+        },
+        {
+          "id": "node-88",
+          "type": "element",
+          "tag": "div",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 42,
+                "right": 42,
+                "bottom": 42,
+                "left": 42
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-89",
+              "type": "element",
+              "tag": "span",
+              "props": {
+                "style": {
+                  "color": "#80858C",
+                  "fontFamily": "sans",
+                  "fontSize": 10,
+                  "fontWeight": 700,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0.8,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-90",
+                  "type": "text",
+                  "value": "DETAIL 03"
+                }
+              ]
+            },
+            {
+              "id": "node-91",
+              "type": "element",
+              "tag": "h2",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 22,
+                  "fontWeight": 700,
+                  "lineHeight": 1.35,
+                  "letterSpacing": -1.1,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 14,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-92",
+                  "type": "text",
+                  "value": "티타임을 연상시키는 디테일"
+                }
+              ]
+            },
+            {
+              "id": "node-93",
+              "type": "element",
+              "tag": "p",
+              "props": {
+                "style": {
+                  "color": "#414954",
+                  "fontFamily": "sans",
+                  "fontSize": 13,
+                  "fontWeight": 400,
+                  "lineHeight": 1.7,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 18,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-94",
+                  "type": "text",
+                  "value": "작은 잔과 받침, 주전자 형태의 오브제가 함께 놓여 차를 즐기는 장면을 떠올리게 합니다."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node-95",
+      "type": "element",
+      "tag": "section",
+      "props": {
+        "style": {
+          "color": "#101010",
+          "fontFamily": "sans",
+          "fontSize": 16,
+          "fontWeight": 400,
+          "lineHeight": 1.2,
+          "letterSpacing": 0,
+          "textAlign": "left",
+          "padding": {
+            "top": 76,
+            "right": 54,
+            "bottom": 0,
+            "left": 54
+          },
+          "margin": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      },
+      "children": [
+        {
+          "id": "node-96",
+          "type": "element",
+          "tag": "div",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 26,
+                "left": 0
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-97",
+              "type": "element",
+              "tag": "span",
+              "props": {
+                "style": {
+                  "color": "#414954",
+                  "fontFamily": "sans",
+                  "fontSize": 10,
+                  "fontWeight": 700,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0.8,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-98",
+                  "type": "text",
+                  "value": "WIDE VIEW"
+                }
+              ]
+            },
+            {
+              "id": "node-99",
+              "type": "element",
+              "tag": "h2",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 22,
+                  "fontWeight": 700,
+                  "lineHeight": 1.35,
+                  "letterSpacing": -1.1,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 10,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-100",
+                  "type": "text",
+                  "value": "패턴의 전체 인상을 한눈에"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "node-101",
+          "type": "element",
+          "tag": "div",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-102",
+              "type": "element",
+              "tag": "img",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 16,
+                  "fontWeight": 400,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "objectFit": "cover",
+                  "objectPosition": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "imageId": "image-3",
+                "alt": "메탈 티웨어 오브제 세트 전체 팩샷 이미지"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node-103",
+      "type": "element",
+      "tag": "section",
+      "props": {
+        "style": {
+          "color": "#101010",
+          "fontFamily": "sans",
+          "fontSize": 16,
+          "fontWeight": 400,
+          "lineHeight": 1.2,
+          "letterSpacing": 0,
+          "textAlign": "left",
+          "padding": {
+            "top": 76,
+            "right": 54,
+            "bottom": 0,
+            "left": 54
+          },
+          "margin": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      },
+      "children": [
+        {
+          "id": "node-104",
+          "type": "element",
+          "tag": "div",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 26,
+                "left": 0
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-105",
+              "type": "element",
+              "tag": "span",
+              "props": {
+                "style": {
+                  "color": "#414954",
+                  "fontFamily": "sans",
+                  "fontSize": 10,
+                  "fontWeight": 700,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0.8,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-106",
+                  "type": "text",
+                  "value": "DETAIL CUTS"
+                }
+              ]
+            },
+            {
+              "id": "node-107",
+              "type": "element",
+              "tag": "h2",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 22,
+                  "fontWeight": 700,
+                  "lineHeight": 1.35,
+                  "letterSpacing": -1.1,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 10,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-108",
+                  "type": "text",
+                  "value": "색과 문양의 작은 차이"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "node-109",
+          "type": "element",
+          "tag": "div",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            },
+            "layout": {
+              "display": "grid",
+              "columns": 3,
+              "gap": 8
+            }
+          },
+          "children": [
+            {
+              "id": "node-110",
+              "type": "element",
+              "tag": "img",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 16,
+                  "fontWeight": 400,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "objectFit": "cover",
+                  "objectPosition": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "imageId": "image-2",
+                "alt": "메탈 티웨어 오브제 세트 디테일 이미지"
+              }
+            },
+            {
+              "id": "node-111",
+              "type": "element",
+              "tag": "img",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 16,
+                  "fontWeight": 400,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "objectFit": "cover",
+                  "objectPosition": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "imageId": "image-2",
+                "alt": "메탈 티웨어 오브제 세트 디테일 이미지"
+              }
+            },
+            {
+              "id": "node-112",
+              "type": "element",
+              "tag": "img",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 16,
+                  "fontWeight": 400,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "objectFit": "cover",
+                  "objectPosition": {
+                    "x": 100,
+                    "y": 0
+                  }
+                },
+                "imageId": "image-2",
+                "alt": "메탈 티웨어 오브제 세트 디테일 이미지"
+              }
+            }
+          ]
+        },
+        {
+          "id": "node-113",
+          "type": "element",
+          "tag": "div",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 8,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            },
+            "layout": {
+              "display": "grid",
+              "columns": 2,
+              "gap": 8
+            }
+          },
+          "children": [
+            {
+              "id": "node-114",
+              "type": "element",
+              "tag": "img",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 16,
+                  "fontWeight": 400,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "objectFit": "cover",
+                  "objectPosition": {
+                    "x": 0,
+                    "y": 100
+                  }
+                },
+                "imageId": "image-2",
+                "alt": "메탈 티웨어 오브제 세트 디테일 이미지"
+              }
+            },
+            {
+              "id": "node-115",
+              "type": "element",
+              "tag": "img",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 16,
+                  "fontWeight": 400,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "objectFit": "cover",
+                  "objectPosition": {
+                    "x": 100,
+                    "y": 100
+                  }
+                },
+                "imageId": "image-2",
+                "alt": "메탈 티웨어 오브제 세트 디테일 이미지"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node-116",
+      "type": "element",
+      "tag": "section",
+      "props": {
+        "style": {
+          "color": "#101010",
+          "fontFamily": "sans",
+          "fontSize": 16,
+          "fontWeight": 400,
+          "lineHeight": 1.2,
+          "letterSpacing": 0,
+          "textAlign": "left",
+          "backgroundColor": "#F0F0F0",
+          "padding": {
+            "top": 34,
+            "right": 34,
+            "bottom": 34,
+            "left": 34
+          },
+          "margin": {
+            "top": 76,
+            "right": 54,
+            "bottom": 0,
+            "left": 54
+          }
+        },
+        "layout": {
+          "display": "grid",
+          "columns": 2,
+          "gap": 34
+        }
+      },
+      "children": [
+        {
+          "id": "node-117",
+          "type": "element",
+          "tag": "div",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-118",
+              "type": "element",
+              "tag": "span",
+              "props": {
+                "style": {
+                  "color": "#414954",
+                  "fontFamily": "sans",
+                  "fontSize": 10,
+                  "fontWeight": 700,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0.8,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-119",
+                  "type": "text",
+                  "value": "EVERYDAY SCENE"
+                }
+              ]
+            },
+            {
+              "id": "node-120",
+              "type": "element",
+              "tag": "h2",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 22,
+                  "fontWeight": 700,
+                  "lineHeight": 1.35,
+                  "letterSpacing": -1.1,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 12,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-121",
+                  "type": "text",
+                  "value": "일상에 더하는"
+                },
+                {
+                  "id": "node-122",
+                  "type": "text",
+                  "value": "\n"
+                },
+                {
+                  "id": "node-123",
+                  "type": "text",
+                  "value": "하나의 포인트"
+                }
+              ]
+            },
+            {
+              "id": "node-124",
+              "type": "element",
+              "tag": "p",
+              "props": {
+                "style": {
+                  "color": "#414954",
+                  "fontFamily": "sans",
+                  "fontSize": 13,
+                  "fontWeight": 400,
+                  "lineHeight": 1.65,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 18,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-125",
+                  "type": "text",
+                  "value": "서재나 거실의 선반, 티테이블 위에 용기와 잔을 간격 있게 배치해 금속 표면의 빛과 그림자를 감상하는 장면"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "node-126",
+          "type": "element",
+          "tag": "div",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-127",
+              "type": "element",
+              "tag": "img",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 16,
+                  "fontWeight": 400,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "objectFit": "cover",
+                  "objectPosition": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "imageId": "image-4",
+                "alt": "메탈 티웨어 오브제 세트 활용 이미지"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node-128",
+      "type": "element",
+      "tag": "section",
+      "props": {
+        "style": {
+          "color": "#101010",
+          "fontFamily": "sans",
+          "fontSize": 16,
+          "fontWeight": 400,
+          "lineHeight": 1.2,
+          "letterSpacing": 0,
+          "textAlign": "left",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "margin": {
+            "top": 76,
+            "right": 54,
+            "bottom": 0,
+            "left": 54
+          }
+        }
+      },
+      "children": [
+        {
+          "id": "node-129",
+          "type": "element",
+          "tag": "div",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 26,
+                "left": 0
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-130",
+              "type": "element",
+              "tag": "span",
+              "props": {
+                "style": {
+                  "color": "#414954",
+                  "fontFamily": "sans",
+                  "fontSize": 10,
+                  "fontWeight": 700,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0.8,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-131",
+                  "type": "text",
+                  "value": "SCALE REFERENCE"
+                }
+              ]
+            },
+            {
+              "id": "node-132",
+              "type": "element",
+              "tag": "h2",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 22,
+                  "fontWeight": 700,
+                  "lineHeight": 1.35,
+                  "letterSpacing": -1.1,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 10,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-133",
+                  "type": "text",
+                  "value": "공간 속에서 살펴보는 균형"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "node-134",
+          "type": "element",
+          "tag": "div",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "backgroundColor": "#F0F0F0",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-135",
+              "type": "element",
+              "tag": "img",
+              "props": {
+                "style": {
+                  "color": "#101010",
+                  "fontFamily": "sans",
+                  "fontSize": 16,
+                  "fontWeight": 400,
+                  "lineHeight": 1.2,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "objectFit": "cover",
+                  "objectPosition": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "imageId": "image-5",
+                "alt": "메탈 티웨어 오브제 세트 크기 참고 이미지"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node-136",
+      "type": "element",
+      "tag": "section",
+      "props": {
+        "style": {
+          "color": "#101010",
+          "fontFamily": "sans",
+          "fontSize": 16,
+          "fontWeight": 400,
+          "lineHeight": 1.2,
+          "letterSpacing": 0,
+          "textAlign": "left",
+          "backgroundColor": "#E6EEEF",
+          "padding": {
+            "top": 48,
+            "right": 54,
+            "bottom": 48,
+            "left": 54
+          },
+          "margin": {
+            "top": 76,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      },
+      "children": [
+        {
+          "id": "node-137",
+          "type": "element",
+          "tag": "span",
+          "props": {
+            "style": {
+              "color": "#414954",
+              "fontFamily": "sans",
+              "fontSize": 10,
+              "fontWeight": 700,
+              "lineHeight": 1.2,
+              "letterSpacing": 0.8,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-138",
+              "type": "text",
+              "value": "IMAGE-BASED NOTE"
+            }
+          ]
+        },
+        {
+          "id": "node-139",
+          "type": "element",
+          "tag": "h2",
+          "props": {
+            "style": {
+              "color": "#101010",
+              "fontFamily": "sans",
+              "fontSize": 17,
+              "fontWeight": 700,
+              "lineHeight": 1.35,
+              "letterSpacing": -0.85,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 12,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-140",
+              "type": "text",
+              "value": "이미지에서 확인되는 정보만 담았습니다."
+            }
+          ]
+        },
+        {
+          "id": "node-141",
+          "type": "element",
+          "tag": "ul",
+          "props": {
+            "style": {
+              "color": "#414954",
+              "fontFamily": "sans",
+              "fontSize": 13,
+              "fontWeight": 400,
+              "lineHeight": 1.7,
+              "letterSpacing": 0,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 18
+              },
+              "margin": {
+                "top": 18,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-142",
+              "type": "element",
+              "tag": "li",
+              "props": {
+                "style": {
+                  "color": "#414954",
+                  "fontFamily": "sans",
+                  "fontSize": 13,
+                  "fontWeight": 400,
+                  "lineHeight": 1.7,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-143",
+                  "type": "text",
+                  "value": "정확한 소재, 도금 여부, 제조 방식, 브랜드, 제작 지역은 이미지로 확인할 수 없습니다."
+                }
+              ]
+            },
+            {
+              "id": "node-144",
+              "type": "element",
+              "tag": "li",
+              "props": {
+                "style": {
+                  "color": "#414954",
+                  "fontFamily": "sans",
+                  "fontSize": 13,
+                  "fontWeight": 400,
+                  "lineHeight": 1.7,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-145",
+                  "type": "text",
+                  "value": "실제 음료 사용 가능 여부와 제품별 규격·용량은 판매자 정보 확인이 필요합니다."
+                }
+              ]
+            },
+            {
+              "id": "node-146",
+              "type": "element",
+              "tag": "li",
+              "props": {
+                "style": {
+                  "color": "#414954",
+                  "fontFamily": "sans",
+                  "fontSize": 13,
+                  "fontWeight": 400,
+                  "lineHeight": 1.7,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-147",
+                  "type": "text",
+                  "value": "사진에서 확인되는 형태·색상·배치만 근거로 작성한 샘플 문구입니다."
+                }
+              ]
+            },
+            {
+              "id": "node-148",
+              "type": "element",
+              "tag": "li",
+              "props": {
+                "style": {
+                  "color": "#414954",
+                  "fontFamily": "sans",
+                  "fontSize": 13,
+                  "fontWeight": 400,
+                  "lineHeight": 1.7,
+                  "letterSpacing": 0,
+                  "textAlign": "left",
+                  "padding": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "margin": {
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  }
+                }
+              },
+              "children": [
+                {
+                  "id": "node-149",
+                  "type": "text",
+                  "value": "식기 사용, 열 사용, 세척 방법은 공식 제품 안내를 확인한 뒤 안내해야 합니다."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node-150",
+      "type": "element",
+      "tag": "section",
+      "props": {
+        "style": {
+          "color": "#C4C7CA",
+          "fontFamily": "sans",
+          "fontSize": 10,
+          "fontWeight": 400,
+          "lineHeight": 1.2,
+          "letterSpacing": 1,
+          "textAlign": "left",
+          "backgroundColor": "#101010",
+          "padding": {
+            "top": 34,
+            "right": 54,
+            "bottom": 34,
+            "left": 54
+          },
+          "margin": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        "layout": {
+          "display": "flex",
+          "direction": "row",
+          "gap": 0,
+          "wrap": false
+        }
+      },
+      "children": [
+        {
+          "id": "node-151",
+          "type": "element",
+          "tag": "span",
+          "props": {
+            "style": {
+              "color": "#C4C7CA",
+              "fontFamily": "sans",
+              "fontSize": 10,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 1,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-152",
+              "type": "text",
+              "value": "PRODUCT DETAIL"
+            }
+          ]
+        },
+        {
+          "id": "node-153",
+          "type": "element",
+          "tag": "span",
+          "props": {
+            "style": {
+              "color": "#C4C7CA",
+              "fontFamily": "sans",
+              "fontSize": 10,
+              "fontWeight": 400,
+              "lineHeight": 1.2,
+              "letterSpacing": 1,
+              "textAlign": "left",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "margin": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          },
+          "children": [
+            {
+              "id": "node-154",
+              "type": "text",
+              "value": "IMAGE-BASED CONTENT"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
