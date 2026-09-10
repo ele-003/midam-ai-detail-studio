@@ -75,7 +75,11 @@ export const importedAssetsSchema = z
   );
 
 // 테스트 UI를 제거할 때 함께 제거할 수 있는 입력 어댑터. 본문 계약은 변경하지 않는다.
-export function parseTestJson(text: string, fallbackAssets: StudioAsset[]) {
+export function parseTestJson(
+  text: string,
+  fallbackAssets: StudioAsset[],
+  uploadedAssets: StudioAsset[] = [],
+) {
   if (new TextEncoder().encode(text).length > TEST_JSON_MAX_BYTES)
     throw new Error("JSON은 최대 5MB까지 입력할 수 있습니다.");
   let raw: unknown;
@@ -95,7 +99,16 @@ export function parseTestJson(text: string, fallbackAssets: StudioAsset[]) {
         })
         .parse(raw)
     : null;
-  const assets = importedAssetsSchema.parse(bundle?.assets ?? fallbackAssets);
+  const baseAssets = importedAssetsSchema.parse(
+    bundle?.assets ?? fallbackAssets,
+  );
+  const overrides = importedAssetsSchema.parse(uploadedAssets);
+  // 사용자가 명시적으로 연결한 사진만 같은 ID를 교체한다. 입력별 검증은 병합 전에 유지한다.
+  const assets = importedAssetsSchema.parse([
+    ...new Map(
+      [...baseAssets, ...overrides].map((asset) => [asset.imageId, asset]),
+    ).values(),
+  ]);
   // 이 테스트 이미지 ID만 보완한다. 실제 응답의 에셋과 사용자 업로드가 우선이다.
   const sample: StudioAsset = {
     imageId: "sample-product",
