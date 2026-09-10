@@ -2,6 +2,7 @@
 import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { TextareaField } from "./TextareaField";
+import { TestJsonImages } from "./TestJsonImages";
 import type { ContractDocument, StudioAsset } from "./studio-contract";
 import {
   describeTestJsonError,
@@ -20,10 +21,12 @@ export function TestJsonImport({ assets, onImport }: TestJsonImportProps) {
   const [error, setError] = useState("");
   const [reading, setReading] = useState(false);
   const [open, setOpen] = useState(false);
+  const [uploadedAssets, setUploadedAssets] = useState<StudioAsset[]>([]);
+  const [readingImage, setReadingImage] = useState(false);
   function load(value: string) {
     setError("");
     try {
-      const result = parseTestJson(value, assets);
+      const result = parseTestJson(value, assets, uploadedAssets);
       onImport(result.document, result.assets);
       dialog.current?.close();
     } catch (cause) {
@@ -34,12 +37,18 @@ export function TestJsonImport({ assets, onImport }: TestJsonImportProps) {
     <section className="cs-test-json" aria-label="테스트용 JSON 가져오기">
       <strong>테스트용 · AI 결과 직접 불러오기</strong>
       <p>작품 정보 입력 없이 JSON으로 초안 편집을 테스트합니다.</p>
+      <TestJsonImages
+        assets={uploadedAssets}
+        disabled={reading || open}
+        onChange={setUploadedAssets}
+        onBusyChange={setReadingImage}
+      />
       <div className="cs-test-json-actions">
         <Button
           size="s"
           type="button"
           variant="outline"
-          disabled={reading}
+          disabled={reading || readingImage}
           onClick={() => file.current?.click()}
         >
           JSON 파일 넣기
@@ -48,7 +57,7 @@ export function TestJsonImport({ assets, onImport }: TestJsonImportProps) {
           size="s"
           type="button"
           variant="outline"
-          disabled={reading}
+          disabled={reading || readingImage}
           onClick={() => {
             setError("");
             setOpen(true);
@@ -63,6 +72,7 @@ export function TestJsonImport({ assets, onImport }: TestJsonImportProps) {
         className="sr-only"
         aria-label="테스트 JSON 파일"
         type="file"
+        disabled={reading || readingImage}
         accept=".json,application/json"
         onChange={async (event) => {
           const selected = event.target.files?.[0];
@@ -98,10 +108,10 @@ export function TestJsonImport({ assets, onImport }: TestJsonImportProps) {
         <section className="cs-modal">
           <h2 id="cs-json-title">테스트 JSON 입력</h2>
           <p>
-            문서 JSON 또는 {"{ document, assets }"} 묶음을 붙여넣으세요. 문서만
-            입력하면 위에서 업로드한 이미지의 imageId를 참조합니다. 최대 5MB.
-            테스트 ID sample-product는 제공된 나전 보관함 이미지에 자동
-            연결됩니다.
+            문서 JSON 또는 {"{ document, assets }"} 묶음을 붙여넣으세요. 최대
+            5MB. 테스트 영역에서 연결한 사진은 같은 imageId의 이미지를 우선
+            교체합니다. sample-product는 연결한 사진이 없고 문서만 입력한 경우
+            기본 나전 이미지로 표시됩니다.
           </p>
           <TextareaField
             label="JSON 결과값"

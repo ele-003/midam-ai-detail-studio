@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { parseTestJson } from "./test-json-import";
+import type { StudioAsset } from "./studio-contract";
 
 const document = {
   schemaVersion: "2.0",
@@ -21,6 +22,46 @@ const document = {
   ],
 };
 describe("테스트 JSON 가져오기", () => {
+  it("직접 올린 이미지를 묶음의 같은 ID보다 우선하고 나머지 에셋은 유지한다", () => {
+    const original: StudioAsset = {
+      imageId: "sample-product",
+      url: "/studio/sample-product.png",
+      width: 1254,
+      height: 1254,
+      alt: "원본",
+      asset_mode: "source",
+      product_generated: false,
+      fidelity_status: "FALLBACK",
+    };
+    const other = { ...original, imageId: "detail" };
+    const uploaded = { ...original, url: "data:image/png;base64,YQ==" };
+    const result = parseTestJson(
+      JSON.stringify({ document, assets: [original, other] }),
+      [],
+      [uploaded],
+    );
+    expect(result.assets).toEqual([uploaded, other]);
+    expect(result.document).toEqual(document);
+  });
+  it("직접 올린 이미지의 URL과 중복 ID도 검증한다", () => {
+    const uploaded: StudioAsset = {
+      imageId: "sample-product",
+      url: "javascript:alert(1)",
+      width: 10,
+      height: 10,
+      alt: "",
+      asset_mode: "source",
+      product_generated: false,
+      fidelity_status: "FALLBACK",
+    };
+    expect(() =>
+      parseTestJson(JSON.stringify(document), [], [uploaded]),
+    ).toThrow();
+    uploaded.url = "/studio/sample-product.png";
+    expect(() =>
+      parseTestJson(JSON.stringify(document), [], [uploaded, uploaded]),
+    ).toThrow();
+  });
   it("문서 단독과 문서·에셋 묶음을 읽는다", () => {
     expect(parseTestJson(JSON.stringify(document), []).document).toEqual(
       document,

@@ -653,10 +653,78 @@
     color: var(--font-dark-subtle);
     margin-bottom: 12px;
   }
-  .cs-test-json > div {
+  .cs-test-json-actions {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+  }
+  .cs-test-json .cs-test-json-images {
+    min-width: 0;
+    margin: 16px 0;
+    padding: 16px;
+    border: 1px solid var(--border-neutral-subtle);
+    background: var(--bg-default);
+  }
+  .cs-test-json-images legend {
+    padding: 0 8px;
+    font-size: var(--text-body-s);
+    font-weight: 600;
+  }
+  .cs-test-json-images p,
+  .cs-test-json-images small {
+    font-size: var(--text-body-s);
+    color: var(--font-dark-subtle);
+  }
+  .cs-test-image-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 12px;
+    margin: 12px 0;
+  }
+  .cs-test-image-controls > div {
+    flex: 1 1 180px;
+    min-width: 0;
+  }
+  .cs-test-image-controls > button {
+    flex-shrink: 0;
+  }
+  .cs-test-image-list {
+    display: grid;
+    gap: 8px;
+    margin: 12px 0;
+    padding: 0;
+    list-style: none;
+  }
+  .cs-test-image-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .cs-test-image-list img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+  .cs-test-image-list li > div {
+    flex: 1;
+    min-width: 0;
+  }
+  .cs-test-image-list strong,
+  .cs-test-image-list span {
+    display: block;
+    overflow-wrap: anywhere;
+    font-size: var(--text-body-s);
+  }
+  .cs-test-image-list span {
+    color: var(--font-dark-subtle);
+  }
+  .cs-test-image-list button {
+    flex-shrink: 0;
+  }
+  .cs-test-json-images .cs-error {
+    color: var(--red-font);
   }
   .cs-json-dialog {
     width: min(760px, calc(100vw - 32px));
@@ -791,7 +859,7 @@
     .cs-modal {
       padding: 24px;
     }
-    .cs-test-json > div > button {
+    .cs-test-json-actions > button {
       flex: 1;
     }
   }
