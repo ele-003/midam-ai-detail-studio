@@ -180,6 +180,15 @@
   line-height: 1.4;
   white-space: pre-line;
 }
+.pd-demo-note,
+.pd-shipping-total {
+  color: var(--font-dark-subtle);
+  font-size: var(--text-body-s);
+  line-height: 1.5;
+}
+.pd-shipping-total {
+  text-align: right;
+}
 .pd-order-fields {
   border-top: 1px solid var(--border-jade-weak);
   padding-top: 24px;
@@ -214,7 +223,7 @@
 .pd-options {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 12px;
 }
 .pd-options select {
   width: 100%;
@@ -264,6 +273,8 @@
 }
 .pd-quantity {
   display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
   justify-content: space-between;
   align-items: center;
   padding: 16px 0;
