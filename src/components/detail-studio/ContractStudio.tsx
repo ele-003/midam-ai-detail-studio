@@ -1,20 +1,21 @@
 "use client";
-import { StudioHeader } from "@/components/detail-studio/StudioHeader";
-
-import { Breadcrumb, BreadcrumbItem } from "@/components/ui/breadcrumb";
-import { useRouter } from "next/navigation";
-import { useEffect, useReducer, useRef, useState } from "react";
-import { Button } from "@/components/ui/button";
-import { StudioInput } from "./StudioInput";
-import { ConvertedPreview } from "./ConvertedPreview";
-import type { ContractDocument } from "./studio-contract";
-import { buildPreview, draftSchema, parseContract } from "./studio-contract";
-import type { StudioAsset, StudioDraft } from "./studio-contract";
-import { exampleAssets, exampleDraft } from "./studio-fixture";
 import "./contract-studio.css";
 
-import { StudioSteps } from "./StudioSteps";
+import { useRouter } from "next/navigation";
+import { useEffect, useReducer, useRef, useState } from "react";
+
+import { StudioHeader } from "@/components/detail-studio/StudioHeader";
+import { Breadcrumb, BreadcrumbItem } from "@/components/ui/breadcrumb";
+import { Button } from "@/components/ui/button";
+
+import { ConvertedPreview } from "./ConvertedPreview";
+import type { ContractDocument } from "./studio-contract";
+import type { StudioAsset, StudioDraft } from "./studio-contract";
+import { buildPreview, draftSchema, parseContract } from "./studio-contract";
+import { exampleAssets, exampleDraft } from "./studio-fixture";
 import { readProject, saveProject } from "./studio-projects";
+import { StudioInput } from "./StudioInput";
+import { StudioSteps } from "./StudioSteps";
 import { importedAssetsSchema } from "./test-json-import";
 interface State {
   draft: StudioDraft;

@@ -1,6 +1,7 @@
-import { expect, test } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import path from "node:path";
+
+import { expect, test } from "@playwright/test";
 
 const source = JSON.parse(
   readFileSync("src/e2e/fixtures/najeon-ai-result.json", "utf8").replace(

@@ -1,7 +1,8 @@
 import { z } from "zod";
+
 import {
-  parseContract,
   type ContractNode,
+  parseContract,
   type StudioAsset,
 } from "./studio-contract";
 

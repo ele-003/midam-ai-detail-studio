@@ -1,5 +1,6 @@
-import { expect, test } from "@playwright/test";
 import { readFileSync } from "node:fs";
+
+import { expect, test } from "@playwright/test";
 
 test("좁은 모바일 편집 화면에서도 최종 검토 버튼의 문구가 잘리지 않는다", async ({
   page,

@@ -1,7 +1,9 @@
 import { readFileSync } from "node:fs";
+
 import { expect, it } from "vitest";
-import { parseContract } from "./studio-contract";
+
 import type { StudioAsset } from "./studio-contract";
+import { parseContract } from "./studio-contract";
 
 it("변환한 HTML 문서의 스타일과 이미지 참조를 보존하여 읽는다", () => {
   const doc = JSON.parse(

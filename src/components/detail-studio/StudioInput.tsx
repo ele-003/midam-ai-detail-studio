@@ -1,21 +1,23 @@
 "use client";
 import Image from "next/image";
 import { useRef, useState } from "react";
+
 import { Button } from "@/components/ui/button";
-import { InputField } from "@/components/ui/input-field";
 import {
-  PlusIcon,
   ArrowRightIcon,
   ArrowUpRightIcon,
+  PlusIcon,
 } from "@/components/ui/icons";
-import { TextareaField } from "./TextareaField";
+import { InputField } from "@/components/ui/input-field";
+
 import type {
   ContractDocument,
   StudioAsset,
   StudioDraft,
 } from "./studio-contract";
-import { TestJsonImport } from "./TestJsonImport";
 import { exampleDraft } from "./studio-fixture";
+import { TestJsonImport } from "./TestJsonImport";
+import { TextareaField } from "./TextareaField";
 
 interface StudioInputProps {
   busy: boolean;

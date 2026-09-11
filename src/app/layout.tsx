@@ -1,8 +1,11 @@
+import "./globals.css";
+
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { QueryProvider } from "./query-provider";
+
+import { AuthBootstrap } from "./auth-bootstrap";
 import { pretendard } from "./fonts";
-import "./globals.css";
+import { QueryProvider } from "./query-provider";
 
 export const metadata: Metadata = {
   title: "장인몰",
@@ -15,7 +18,9 @@ export default function RootLayout({
   return (
     <html lang="ko" className={`${pretendard.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
-        <QueryProvider>{children}</QueryProvider>
+        <QueryProvider>
+          <AuthBootstrap>{children}</AuthBootstrap>
+        </QueryProvider>
       </body>
     </html>
   );

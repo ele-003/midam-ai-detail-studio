@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+
 import { ContractStudio } from "@/components/detail-studio/ContractStudio";
 import { ConvertedPreview } from "@/components/detail-studio/ConvertedPreview";
 

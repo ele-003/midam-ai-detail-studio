@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { parseTestJson } from "./test-json-import";
+
 import type { StudioAsset } from "./studio-contract";
+import { parseTestJson } from "./test-json-import";
 
 const document = {
   schemaVersion: "2.0",

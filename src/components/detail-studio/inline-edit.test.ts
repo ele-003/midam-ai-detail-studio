@@ -1,5 +1,7 @@
 import { readFileSync } from "node:fs";
+
 import { describe, expect, it } from "vitest";
+
 import { changeColor, changeText, findNode, moveElement } from "./inline-edit";
 import { parseContract, type StudioAsset } from "./studio-contract";
 const assets = [
