@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 
-import { ContractStudio } from "@/components/detail-studio/ContractStudio";
 import { ConvertedPreview } from "@/components/detail-studio/ConvertedPreview";
+
+import { StudioPage } from "./_components/StudioPage";
 
 export const metadata: Metadata = {
   title: "상세페이지 스튜디오 | 장인몰",
@@ -17,6 +18,7 @@ export default async function ProductDetailStudioPage({
     view?: string;
     edit?: string;
     preview?: string;
+    mockGeneration?: string;
   }>;
 }) {
   const params = await searchParams;
@@ -38,6 +40,14 @@ export default async function ProductDetailStudioPage({
     );
   }
   return (
-    <ContractStudio key={params.project ?? "new"} projectId={params.project} />
+    <StudioPage
+      key={params.project ?? "new"}
+      projectId={params.project}
+      scenario={
+        params.mockGeneration === "error" || params.mockGeneration === "slow"
+          ? params.mockGeneration
+          : "success"
+      }
+    />
   );
 }
