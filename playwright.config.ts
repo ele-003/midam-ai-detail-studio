@@ -16,6 +16,8 @@ export default defineConfig({
   },
   projects: [{ name: "chromium", use: { ...devices["Desktop Chrome"] } }],
   webServer: {
+    // 스튜디오의 단독 MSW 모드가 회원·상품 목업을 활성화하지 않는지 검증한다.
+    env: { NEXT_PUBLIC_API_MOCKING: "" },
     command: isCI
       ? `npm run build && npm run start -- --port ${port}`
       : `npm run dev -- --port ${port} --webpack`,

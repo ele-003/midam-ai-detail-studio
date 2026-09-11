@@ -3,7 +3,8 @@ import { publicEnv } from "@/lib/env";
 let startPromise: Promise<void> | null = null;
 
 /**
- * 브라우저 목업 워커를 기동한다. 목업 플래그가 켜진 경우에만 동작.
+ * 브라우저 목업 워커를 기동한다. 기본값은 전역 목업 플래그이며,
+ * MSW 전용 스튜디오는 enabled: true로 요청 전에 명시적으로 준비한다.
  *
  * 호출부는 `src/app/auth-bootstrap.tsx` — 부팅 시 첫 클라이언트 `/api/*` 요청(silent refresh)
  * 전에 `await`한다. 최상위 클라이언트 경계라 앱 전체가 그 뒤에 이어진다.
@@ -16,8 +17,10 @@ let startPromise: Promise<void> | null = null;
  * `worker.start()` 완료 전에 두 번째 호출을 즉시 resolve시켜 첫 요청이 인터셉트를 놓친다).
  * 실패하면 상태를 되돌려 다음 호출이 재시도할 수 있게 한다.
  */
-export function startMockWorker(): Promise<void> {
-  if (!publicEnv.apiMocking) return Promise.resolve();
+export function startMockWorker({
+  enabled = publicEnv.apiMocking,
+}: { enabled?: boolean } = {}): Promise<void> {
+  if (!enabled) return Promise.resolve();
   startPromise ??= (async () => {
     const { worker } = await import("./browser");
     await worker.start({ onUnhandledRequest: "bypass" });

@@ -1,5 +1,8 @@
 import { z } from "zod";
 
+import { studioAssetsSchema as importedAssetsSchema } from "@/lib/detail-studio/assets";
+export { studioAssetsSchema as importedAssetsSchema } from "@/lib/detail-studio/assets";
+
 import {
   type ContractNode,
   parseContract,
@@ -30,51 +33,6 @@ export function describeTestJsonError(error: unknown): string {
     ? error.message
     : "JSON을 불러오지 못했습니다. 다시 확인해 주세요.";
 }
-export const importedAssetsSchema = z
-  .array(
-    z.strictObject({
-      imageId: z.string().min(1).max(80),
-      url: z.string().refine((value) => {
-        if (
-          /^\/(studio|car-detail|converted-detail)\/[\w./-]+$/.test(value) &&
-          !value.includes("..")
-        )
-          return true;
-        if (/^data:image\/(png|jpeg|webp);base64,[A-Za-z0-9+/=]+$/.test(value))
-          return true;
-        try {
-          const url = new URL(value);
-          return url.protocol === "https:" && !url.username && !url.password;
-        } catch {
-          return false;
-        }
-      }, "이미지는 HTTPS 주소 또는 지원하는 로컬 이미지여야 합니다."),
-      width: z.number().int().positive().max(20000),
-      height: z.number().int().positive().max(20000),
-      alt: z.string().max(1000),
-      asset_mode: z.enum([
-        "source",
-        "source_crop",
-        "source_composite",
-        "generated_scene",
-        "generated_view",
-      ]),
-      product_generated: z.boolean(),
-      fidelity_status: z.enum([
-        "VERIFIED",
-        "FALLBACK",
-        "GENERATED",
-        "REJECTED",
-      ]),
-    }),
-  )
-  .max(100)
-  .refine(
-    (assets) =>
-      new Set(assets.map((asset) => asset.imageId)).size === assets.length,
-    "이미지 ID가 중복되었습니다.",
-  );
-
 // 테스트 UI를 제거할 때 함께 제거할 수 있는 입력 어댑터. 본문 계약은 변경하지 않는다.
 export function parseTestJson(
   text: string,

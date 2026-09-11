@@ -47,7 +47,19 @@ function reducer(state: State, action: Action): State {
     };
   return state;
 }
-export function ContractStudio({ projectId }: { projectId?: string }) {
+interface ContractStudioProps {
+  projectId?: string;
+  generateDraft: (
+    draft: StudioDraft,
+    assets: StudioAsset[],
+    signal: AbortSignal,
+  ) => Promise<{ document: ContractDocument; assets: StudioAsset[] }>;
+}
+
+export function ContractStudio({
+  projectId,
+  generateDraft,
+}: ContractStudioProps) {
   const [activeId, setActiveId] = useState(projectId ?? "");
   const router = useRouter();
   const [state, dispatch] = useReducer(reducer, {
@@ -65,7 +77,7 @@ export function ContractStudio({ projectId }: { projectId?: string }) {
   const [error, setError] = useState("");
   const [confirmNew, setConfirmNew] = useState(false);
   const [help, setHelp] = useState(false);
-  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const generation = useRef<AbortController | null>(null);
   const dialog = useRef<HTMLDialogElement>(null);
   useEffect(() => {
     if (confirmNew) dialog.current?.showModal();
@@ -105,7 +117,8 @@ export function ContractStudio({ projectId }: { projectId?: string }) {
     }, 0);
     return () => {
       clearTimeout(restore);
-      if (timer.current) clearTimeout(timer.current);
+      generation.current?.abort();
+      generation.current = null;
     };
   }, [projectId]);
   useEffect(() => {
@@ -116,25 +129,31 @@ export function ContractStudio({ projectId }: { projectId?: string }) {
     window.addEventListener("beforeunload", warn);
     return () => window.removeEventListener("beforeunload", warn);
   }, [dirty]);
-  function generate(draft: StudioDraft, list: StudioAsset[]) {
-    const generatedId = crypto.randomUUID();
-    setActiveId(generatedId);
+  async function generate(draft: StudioDraft, list: StudioAsset[]) {
+    if (generation.current) return;
+    const controller = new AbortController();
+    generation.current = controller;
     setBusy(true);
     setError("");
-    timer.current = setTimeout(() => {
+    try {
+      const result = await generateDraft(draft, list, controller.signal);
+      if (controller.signal.aborted) return;
+      const document = parseContract(result.document, result.assets);
+      const generatedId = crypto.randomUUID();
+      setActiveId(generatedId);
+      setRestoredDocument(document);
       dispatch({ type: "load", draft });
       setSnapshot(draft);
-      setAssets(list);
+      setAssets(result.assets);
       try {
-        parseContract(buildPreview(draft), list);
         saveProject({
           id: generatedId,
           title: draft.product_name,
           kind: "input",
           status: "draft",
-          thumbnail: list[0]?.url ?? "",
+          thumbnail: result.assets[0]?.url ?? "",
           updatedAt: new Date().toISOString(),
-          payload: { draft, assets: list },
+          payload: { draft, document, assets: result.assets },
         });
         window.history.replaceState(
           null,
@@ -149,8 +168,19 @@ export function ContractStudio({ projectId }: { projectId?: string }) {
         );
       }
       setStep("editing");
-      setBusy(false);
-    }, 1800);
+    } catch (cause) {
+      if (controller.signal.aborted) return;
+      setError(
+        cause instanceof Error && cause.name === "TimeoutError"
+          ? "초안 응답 시간이 초과되었습니다. 입력 내용을 유지했습니다. 다시 시도해 주세요."
+          : "초안을 불러오지 못했습니다. 입력 내용을 유지했습니다. 다시 시도해 주세요.",
+      );
+    } finally {
+      if (generation.current === controller) {
+        generation.current = null;
+        setBusy(false);
+      }
+    }
   }
   function save(status: "draft" | "result" = "draft") {
     try {
@@ -202,6 +232,7 @@ export function ContractStudio({ projectId }: { projectId?: string }) {
       className="cs-shell"
       onClickCapture={(event) => {
         if (
+          !busy &&
           (event.target as HTMLElement).closest('a[href="/"]') &&
           (dirty || saved === "아직 저장하지 않음") &&
           !save("draft")
@@ -299,47 +330,49 @@ export function ContractStudio({ projectId }: { projectId?: string }) {
             </small>
           </div>
         )}
-        {step === "input" && !busy && (
-          <StudioInput
-            busy={busy}
-            onExample={() =>
-              router.push(
-                "/seller/products/new?sample=metal&project=sample-metal",
-              )
-            }
-            onGenerate={generate}
-            onImport={(document, list, title) => {
-              const id = crypto.randomUUID();
-              const draft = { ...exampleDraft, product_name: title };
-              // 생성 대기 없이 검증된 AI 결과를 기존 편집기에 전달한다.
-              setActiveId(id);
-              setRestoredDocument(document);
-              setAssets(list);
-              dispatch({ type: "load", draft });
-              setSnapshot(draft);
-              try {
-                saveProject({
-                  id,
-                  title,
-                  kind: "input",
-                  status: "draft",
-                  thumbnail: list[0]?.url ?? "",
-                  updatedAt: new Date().toISOString(),
-                  payload: { draft, document, assets: list },
-                });
-                window.history.replaceState(
-                  null,
-                  "",
-                  `/seller/products/new?project=${encodeURIComponent(id)}`,
-                );
-              } catch {
-                throw new Error(
-                  "브라우저에 저장하지 못했습니다. 저장 공간을 확인한 뒤 다시 시도해 주세요.",
-                );
+        {step === "input" && (
+          <div hidden={busy}>
+            <StudioInput
+              busy={busy}
+              onExample={() =>
+                router.push(
+                  "/seller/products/new?sample=metal&project=sample-metal",
+                )
               }
-              setStep("editing");
-            }}
-          />
+              onGenerate={generate}
+              onImport={(document, list, title) => {
+                const id = crypto.randomUUID();
+                const draft = { ...exampleDraft, product_name: title };
+                // 생성 대기 없이 검증된 AI 결과를 기존 편집기에 전달한다.
+                setActiveId(id);
+                setRestoredDocument(document);
+                setAssets(list);
+                dispatch({ type: "load", draft });
+                setSnapshot(draft);
+                try {
+                  saveProject({
+                    id,
+                    title,
+                    kind: "input",
+                    status: "draft",
+                    thumbnail: list[0]?.url ?? "",
+                    updatedAt: new Date().toISOString(),
+                    payload: { draft, document, assets: list },
+                  });
+                  window.history.replaceState(
+                    null,
+                    "",
+                    `/seller/products/new?project=${encodeURIComponent(id)}`,
+                  );
+                } catch {
+                  throw new Error(
+                    "브라우저에 저장하지 못했습니다. 저장 공간을 확인한 뒤 다시 시도해 주세요.",
+                  );
+                }
+                setStep("editing");
+              }}
+            />
+          </div>
         )}
         <footer className="cs-footer">
           <span>
