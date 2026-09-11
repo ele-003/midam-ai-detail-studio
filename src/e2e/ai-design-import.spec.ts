@@ -1,5 +1,6 @@
-import { expect, test } from "@playwright/test";
 import { readFileSync } from "node:fs";
+
+import { expect, test } from "@playwright/test";
 
 test("제품 정보는 열이 정렬된 표로 표시되고 셀 편집을 유지한다", async ({
   page,

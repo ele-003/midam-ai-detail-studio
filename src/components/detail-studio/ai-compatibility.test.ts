@@ -1,4 +1,5 @@
 import { expect, it } from "vitest";
+
 import { parseContract } from "./studio-contract";
 const doc = (props: unknown, children: unknown[] = []) => ({
   schemaVersion: "2.0",

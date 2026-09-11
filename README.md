@@ -47,6 +47,8 @@ npm run dev -- --port 3002 --webpack
 - `dev`: 프로토타입 통합 및 Vercel Production 배포용.
 - 작업 브랜치: 변경을 커밋·푸시하고 필수 CI를 통과한 PR을 `dev`로 병합합니다.
 
+원본 동기화 기준은 `Jangingmall/frontend`의 `dev` 커밋 `8eb5cca`(2026-09-11)입니다. 인증·상품 API, MSW 목업, 공통 UI 업데이트를 포함합니다. `dev`에는 기존 스튜디오를 유지하고, 원본 변경 이력을 보존하는 merge 방식으로 동기화합니다. 인증 초기화가 추가되어도 현재 작업실과 제작 화면은 로그인 없이 열리며, AI 생성·저장 API 연결 여부는 위 프로토타입 범위와 같습니다.
+
 Vercel은 이 저장소를 연결하고 Production Branch를 `dev`, Framework Preset을 Next.js, Root Directory를 저장소 루트로 설정합니다. 빌드는 `npm run build`, Node.js는 24.x를 사용합니다. `dev` 병합 시 프로덕션 배포가 갱신됩니다. 프로토타입을 배포하기 위해 `dev`를 `main`으로 병합하지 않습니다.
 
 현재 화면은 외부 API 없이 실행됩니다. 배포 주소의 브라우저 저장소는 localhost와 별개이며, 다른 사용자와 작업 데이터가 공유되지 않습니다. 실제 API 연결 시에는 환경 변수와 서버 저장 흐름을 함께 구성해야 합니다.

@@ -1,12 +1,15 @@
 "use client";
+import "./product-detail.css";
+
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
 import type { ReactNode } from "react";
+import { useEffect, useRef, useState } from "react";
+
 import { Button } from "@/components/ui/button";
-import type { StudioAsset } from "./studio-contract";
+
 import { DEMO_PRODUCT_INFORMATION as productInfo } from "./demo-product-information";
-import "./product-detail.css";
+import type { StudioAsset } from "./studio-contract";
 
 const formatPrice = (amount: number) => `${amount.toLocaleString("ko-KR")}원`;
 

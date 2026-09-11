@@ -1,34 +1,36 @@
 "use client";
-import { StudioHeader } from "@/components/detail-studio/StudioHeader";
+import "./converted-preview.css";
+import "./contract-studio.css";
+import "./inline-editor.css";
 
-import Link from "next/link";
-import { Breadcrumb, BreadcrumbItem } from "@/components/ui/breadcrumb";
-import { Badge } from "@/components/ui/badge";
-import { Toast } from "@/components/ui/toast";
-import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { createElement, useEffect, useRef, useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 import type { CSSProperties } from "react";
-import { parseContract } from "./studio-contract";
+import { createElement, useEffect, useRef, useState } from "react";
+
+import { StudioHeader } from "@/components/detail-studio/StudioHeader";
+import { Badge } from "@/components/ui/badge";
+import { Breadcrumb, BreadcrumbItem } from "@/components/ui/breadcrumb";
+import { Button } from "@/components/ui/button";
+import { Toast } from "@/components/ui/toast";
+
+import {
+  changeColor,
+  changeText,
+  findNode,
+  moveElement,
+  siblings,
+} from "./inline-edit";
+import { InlineText } from "./InlineText";
+import { ProductDetailView } from "./ProductDetailView";
 import type {
   ContractDocument,
   ContractNode,
   StudioAsset,
   StudioDraft,
 } from "./studio-contract";
-import "./converted-preview.css";
-import "./contract-studio.css";
-import { Button } from "@/components/ui/button";
-import { InlineText } from "./InlineText";
-import { ProductDetailView } from "./ProductDetailView";
-import {
-  changeText,
-  changeColor,
-  findNode,
-  moveElement,
-  siblings,
-} from "./inline-edit";
-import "./inline-editor.css";
+import { parseContract } from "./studio-contract";
 
 interface ManifestEntry {
   imageId: string;
@@ -61,8 +63,8 @@ const registry = {
   td: "td",
 } as const;
 
-import { StudioSteps } from "./StudioSteps";
 import { readProject, saveProject } from "./studio-projects";
+import { StudioSteps } from "./StudioSteps";
 function textFields(
   node: ContractNode,
   parent = "",

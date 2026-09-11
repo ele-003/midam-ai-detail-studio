@@ -1,14 +1,16 @@
 "use client";
 import { useRef, useState } from "react";
+
 import { Button } from "@/components/ui/button";
-import { TextareaField } from "./TextareaField";
-import { TestJsonImages } from "./TestJsonImages";
+
 import type { ContractDocument, StudioAsset } from "./studio-contract";
 import {
   describeTestJsonError,
   parseTestJson,
   TEST_JSON_MAX_BYTES,
 } from "./test-json-import";
+import { TestJsonImages } from "./TestJsonImages";
+import { TextareaField } from "./TextareaField";
 
 interface TestJsonImportProps {
   assets: StudioAsset[];

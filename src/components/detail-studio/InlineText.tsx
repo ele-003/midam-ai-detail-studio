@@ -1,6 +1,6 @@
 "use client";
-import { useLayoutEffect, useRef } from "react";
 import type { KeyboardEvent, MouseEvent } from "react";
+import { useLayoutEffect, useRef } from "react";
 
 export function InlineText({
   id,

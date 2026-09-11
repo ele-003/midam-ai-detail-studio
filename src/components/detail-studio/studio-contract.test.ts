@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
+
 import { buildPreview, editSection, parseContract } from "./studio-contract";
-import { exampleDraft, exampleAssets } from "./studio-fixture";
+import { exampleAssets, exampleDraft } from "./studio-fixture";
 
 describe("공식 상세페이지 계약을 사용하는 제작 화면", () => {
   it("root 배열과 element/text 구조를 만든다", () => {

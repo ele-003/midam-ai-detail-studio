@@ -1,6 +1,7 @@
-import { expect, test } from "@playwright/test";
-import path from "node:path";
 import { readFileSync } from "node:fs";
+import path from "node:path";
+
+import { expect, test } from "@playwright/test";
 
 test("에셋 없는 원본 AI JSON도 텍스트 입력에서 나전 이미지와 연결한다", async ({
   page,

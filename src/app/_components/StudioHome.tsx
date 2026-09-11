@@ -1,20 +1,21 @@
 "use client";
-import { StudioHeader } from "@/components/detail-studio/StudioHeader";
+import "@/components/detail-studio/contract-studio.css";
+import "./studio-home.css";
 
-import Link from "next/link";
 import Image from "next/image";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { PlusIcon } from "@/components/ui/icons";
+import Link from "next/link";
 import { useEffect, useState } from "react";
+
 import {
   PROJECT_PREFIX,
   projectHref,
-  readProject,
   type ProjectRecord,
+  readProject,
 } from "@/components/detail-studio/studio-projects";
-import "@/components/detail-studio/contract-studio.css";
-import "./studio-home.css";
+import { StudioHeader } from "@/components/detail-studio/StudioHeader";
+import { Badge } from "@/components/ui/badge";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { PlusIcon } from "@/components/ui/icons";
 
 const samples: ProjectRecord[] = [
   {
