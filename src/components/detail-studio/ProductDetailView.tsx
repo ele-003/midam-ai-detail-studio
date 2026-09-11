@@ -5,7 +5,10 @@ import { useEffect, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import { Button } from "@/components/ui/button";
 import type { StudioAsset } from "./studio-contract";
+import { DEMO_PRODUCT_INFORMATION as productInfo } from "./demo-product-information";
 import "./product-detail.css";
+
+const formatPrice = (amount: number) => `${amount.toLocaleString("ko-KR")}원`;
 
 function Icon({ name, size = 24 }: { name: string; size?: number }) {
   return (
@@ -67,7 +70,9 @@ export function ProductDetailView({
   const [selected, setSelected] = useState(0);
   const [liked, setLiked] = useState(false);
   const [activeTab, setActiveTab] = useState(tabs[0][0]);
-  const [options, setOptions] = useState(["", "", "", ""]);
+  const [options, setOptions] = useState(
+    productInfo.optionGroups.map((group) => group.defaultChoice),
+  );
   const [quantity, setQuantity] = useState(1);
   const [message, setMessage] = useState("");
   const [lightbox, setLightbox] = useState(false);
@@ -76,6 +81,20 @@ export function ProductDetailView({
   const lightboxRef = useRef<HTMLDialogElement>(null);
   const inquiryRef = useRef<HTMLDialogElement>(null);
   const image = assets[selected] ?? assets[0];
+  const choices = productInfo.optionGroups.map((group, index) =>
+    group.choices.find((choice) => choice.id === options[index]),
+  );
+  const requiredSelected = productInfo.optionGroups.every(
+    (group, index) => !group.required || !!choices[index],
+  );
+  const totalPrice =
+    (productInfo.price +
+      choices.reduce((sum, choice) => sum + (choice?.priceDelta ?? 0), 0)) *
+    quantity;
+  const shippingFee =
+    totalPrice >= productInfo.freeShippingThreshold
+      ? 0
+      : productInfo.shippingFee;
   useEffect(() => {
     if (lightbox) lightboxRef.current?.showModal();
     else lightboxRef.current?.close();
@@ -86,7 +105,7 @@ export function ProductDetailView({
   }, [inquiry]);
   const notify = (text: string) => setMessage(text);
   function purchase() {
-    if (options.slice(0, 3).some((value) => !value)) {
+    if (!requiredSelected) {
       notify("필수 옵션을 선택해 주세요.");
       return;
     }
@@ -215,15 +234,21 @@ export function ProductDetailView({
                     ?.scrollIntoView({ behavior: "smooth" });
                 }}
               >
-                작가 이름
+                {productInfo.artisan.name}
                 <Icon name="imgIcons11" size={20} />
               </button>
               <span>
                 <Icon name="imgIconStarFilled" size={20} /> —
               </span>
             </div>
-            <strong className="pd-price">가격 정보 미등록</strong>
+            <strong className="pd-price">
+              {formatPrice(productInfo.price)}
+            </strong>
           </div>
+          <p className="pd-demo-note">
+            시연용 상품 정보 · 가격, 옵션, 장인 소개 및 상품 사양은 예시
+            데이터입니다.
+          </p>
           <p className="pd-summary">
             {summary || "작품에 담긴 이야기를 아래 상세페이지에서 만나보세요."}
           </p>
@@ -231,22 +256,22 @@ export function ProductDetailView({
             <dl>
               <div>
                 <dt>배송비</dt>
-                <dd>배송 정보 미등록</dd>
+                <dd>
+                  {formatPrice(productInfo.shippingFee)} (
+                  {formatPrice(productInfo.freeShippingThreshold)} 이상 무료)
+                </dd>
               </div>
               <div>
                 <dt>제작 기간</dt>
-                <dd>제작 기간 미등록</dd>
+                <dd>{productInfo.productionPeriod}</dd>
               </div>
             </dl>
-            <label className="pd-option-label">
-              선택 ({options.filter(Boolean).length}/4)
-            </label>
             <div className="pd-options">
-              {["필수 옵션 1", "필수 옵션 2", "필수 옵션 3", "선물 옵션"].map(
-                (label, index) => (
+              {productInfo.optionGroups.map((group, index) => (
+                <label key={group.id}>
+                  <span className="pd-option-label">{group.label}</span>
                   <select
-                    aria-label={label}
-                    key={label}
+                    aria-label={group.label}
                     value={options[index]}
                     onChange={(event) =>
                       setOptions(
@@ -256,19 +281,27 @@ export function ProductDetailView({
                       )
                     }
                   >
-                    <option value="">
-                      {index + 1}. {label}
-                    </option>
-                    <option value="default">
-                      {index === 3 ? "선물 포장 없음" : "기본 옵션 (예시)"}
-                    </option>
+                    {group.required && <option value="">선택해 주세요</option>}
+                    {group.choices.map((choice) => (
+                      <option key={choice.id} value={choice.id}>
+                        {choice.name}
+                        {choice.priceDelta
+                          ? ` (+${formatPrice(choice.priceDelta)})`
+                          : ""}
+                      </option>
+                    ))}
                   </select>
-                ),
-              )}
+                </label>
+              ))}
             </div>
-            {options.slice(0, 3).every(Boolean) && (
+            {requiredSelected && (
               <div className="pd-quantity">
-                <span>선택한 기본 구성</span>
+                <span>
+                  {choices
+                    .filter((choice) => choice && choice.id !== "none")
+                    .map((choice) => choice?.name)
+                    .join(" / ")}
+                </span>
                 <div>
                   <button
                     aria-label="수량 줄이기"
@@ -290,10 +323,22 @@ export function ProductDetailView({
             )}
           </div>
           <div className="pd-purchase">
-            <div className="pd-total">
+            <div className="pd-total" aria-live="polite">
               <span>총 상품 금액</span>
-              <strong>가격 정보 미등록</strong>
+              <strong>
+                {requiredSelected
+                  ? formatPrice(totalPrice)
+                  : "필수 옵션을 선택해 주세요"}
+              </strong>
             </div>
+            {requiredSelected && (
+              <p className="pd-shipping-total">
+                배송비{" "}
+                <strong aria-label="적용 배송비">
+                  {shippingFee ? formatPrice(shippingFee) : "무료"}
+                </strong>
+              </p>
+            )}
             <div className="pd-purchase-buttons">
               <Button
                 size="s"
@@ -339,20 +384,14 @@ export function ProductDetailView({
               />
               <div>
                 <div className="pd-badges">
-                  <span>전승자 구분</span>
-                  <span>분야</span>
+                  <span>{productInfo.artisan.certification}</span>
+                  <span>{productInfo.artisan.field}</span>
                 </div>
-                <h2>작가 이름</h2>
-                <p>
-                  작품을 만든 작가의 소개가 표시되는 공간입니다.
-                  <br />
-                  <br />
-                  작가 정보가 등록되면 작품의 배경과 제작 이야기를 함께 확인할
-                  수 있습니다.
-                </p>
+                <h2>{productInfo.artisan.name}</h2>
+                <p>{productInfo.artisan.introduction}</p>
                 {author && (
                   <p className="pd-author-more">
-                    현재 예시에는 작가의 이력과 소개 정보가 등록되지 않았습니다.
+                    {productInfo.artisan.makingStory}
                   </p>
                 )}
                 <button className="pd-more" onClick={() => setAuthor(!author)}>
@@ -367,14 +406,12 @@ export function ProductDetailView({
             <section className="pd-section">
               <h2>상품 상세 정보</h2>
               <dl className="pd-specs">
-                {["소재", "규격", "중량", "구성", "용도", "인증", "제조"].map(
-                  (label) => (
-                    <div key={label}>
-                      <dt>{label}</dt>
-                      <dd>정보 미등록</dd>
-                    </div>
-                  ),
-                )}
+                {productInfo.specifications.map(([label, value]) => (
+                  <div key={label}>
+                    <dt>{label}</dt>
+                    <dd>{value}</dd>
+                  </div>
+                ))}
               </dl>
             </section>
           </section>
@@ -397,7 +434,9 @@ export function ProductDetailView({
               결제 수단과 주문 안내는 서비스 연결 후 제공됩니다.
             </Disclosure>
             <Disclosure label="배송정보">
-              배송 방법, 비용 및 기간은 판매자 정보 등록 후 제공됩니다.
+              배송비 {formatPrice(productInfo.shippingFee)} (
+              {formatPrice(productInfo.freeShippingThreshold)} 이상 무료).{" "}
+              {productInfo.productionPeriod}.
             </Disclosure>
             <Disclosure label="교환 및 반품정보">
               판매자가 등록한 교환·반품 방법과 조건이 이곳에 표시됩니다.
